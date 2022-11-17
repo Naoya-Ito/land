@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc32c7180220b40fcb0eb971ccaa1592, type: 3}
+  m_Name: train_def2
+  m_EditorClassIdentifier: 
+  event_text: "\u300C\u8CB4\u516C\u306F\u826F\u3044\u773C\u3092\u6301\u3063\u3066\u3044\u308B\u3088\u3046\u3060\u3002\n\u305D\u306E\u773C\u306A\u3089\u6575\u306E\u6BBA\u6C17\u304C\u9ED2\u3044\u7DDA\u3067\u898B\u3048\u308B\u3060\u308D\u3046\u300D"
+  place_text: 
+  chara_text: 
+  image: 
+  bg: 
+  bgm: 
+  right_card: 
+  center_card: 
+  left_card: 
+  clicked_change_key: 
+  clicked_change_val: 0
+  insteadEvent:
+    key: 
+    value_int: 0
+    value_str: 
+    event_name: 
+  choices:
+  - choice_text: "\u9ED2\u3044\u7DDA\u306E\u5834\u6240\u306F\u8981\u6CE8\u610F\u3001\u304B"
+    key_name: train_def3
+    key_category: 
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: 
+    change_val: 0
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0

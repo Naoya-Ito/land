@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aee3b36642ee490ea060ea5390d83d9, type: 3}
+  m_Name: necro
+  m_EditorClassIdentifier: 
+  name: "\u30CD\u30AF\u30ED\u30DE\u30F3\u30B5\u30FC"
+  lv: 50
+  speed: 7
+  speedRepeat: 0.5
+  image: necro
+  start_text: "\u300C\u6B7B\u306F\u7D42\u308F\u308A\u3067\u306F\u306A\u304F\u59CB\u307E\u308A\u3060\u3068\u77E5\u308C\u300D"
+  dead_text: "\u300C\u547D\u304C\u7D42\u308F\u308B\u2026\u2026\u300D"
+  isTrap: 0
+  isBoss: 1
+  attacks:
+  - attack_text: "\u300C\u51CD\u3066\u3064\u304F\u95C7\u300D"
+    circle_speed: 7
+    is_change_size: 0
+    attacks:
+    - start_time: 0
+      repeat_time: 0.6
+      attack_name: 6
+    - start_time: 0
+      repeat_time: 0.6
+      attack_name: 3
+    - start_time: 0.3
+      repeat_time: 0.9
+      attack_name: 5
+    move:
+      move_name: 3
+  - attack_text: "\u300C\u30E1\u30AC\u30ED\u30F4\u30A1\u30CB\u30A2\u300D"
+    circle_speed: 5
+    is_change_size: 0
+    attacks:
+    - start_time: 0
+      repeat_time: 0.3
+      attack_name: 8
+    - start_time: 0
+      repeat_time: 0.7
+      attack_name: 9
+    - start_time: 0.3
+      repeat_time: 0.9
+      attack_name: 5
+    move:
+      move_name: 2
+  drop:
+  - samurai
+  - magic_shield
+  - arisia
+  is_half_hp: 0

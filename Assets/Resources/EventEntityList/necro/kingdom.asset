@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc32c7180220b40fcb0eb971ccaa1592, type: 3}
+  m_Name: kingdom
+  m_EditorClassIdentifier: 
+  event_text: "\u6B7B\u970A\u8853\u5E2B\u306B\u652F\u914D\u3055\u308C\u305F\u738B\u56FD\u306E\u8ABF\u67FB\u66F8\u3060\u3002"
+  place_text: 
+  chara_text: 
+  image: 
+  bg: 
+  bgm: 
+  right_card: 
+  center_card: 
+  left_card: 
+  clicked_change_key: 
+  clicked_change_val: 0
+  insteadEvent:
+    key: 
+    value_int: 0
+    value_str: 
+    event_name: 
+  choices:
+  - choice_text: "\u8ABF\u67FB\u66F81"
+    key_name: king1
+    key_category: 
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: 
+    change_val: 0
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0
+  - choice_text: "\u8ABF\u67FB\u66F82"
+    key_name: king2
+    key_category: 
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: 
+    change_val: 0
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0
+  - choice_text: "\u8ABF\u67FB\u66F83"
+    key_name: king3
+    key_category: 
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: 
+    change_val: 0
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0
+  - choice_text: "\u8ABF\u67FB\u66F84"
+    key_name: king4
+    key_category: 
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: 
+    change_val: 0
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0
+  - choice_text: "\u8ABF\u67FB\u66F85"
+    key_name: king5
+    key_category: 
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: 
+    change_val: 0
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0
+  - choice_text: "\u6B21\u306E\u8ABF\u67FB\u66F8\u3092\u898B\u308B"
+    key_name: kingdom2
+    key_category: 
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: 
+    change_val: 0
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0
+  isHeal: 0

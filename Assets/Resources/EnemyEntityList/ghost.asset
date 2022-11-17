@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aee3b36642ee490ea060ea5390d83d9, type: 3}
+  m_Name: ghost
+  m_EditorClassIdentifier: 
+  name: "\u30B4\u30FC\u30B9\u30C8"
+  lv: 7
+  speed: 5
+  speedRepeat: 2
+  image: ghost
+  start_text: 
+  dead_text: "\u300C\u546A\u308F\u308C\u308D\u2026\u2026\u300D"
+  isTrap: 0
+  isBoss: 0
+  attacks:
+  - attack_text: "\u300C\u5BC2\u3057\u3044\u2026\u2026\u300D"
+    circle_speed: 7
+    is_change_size: 0
+    attacks:
+    - start_time: 0
+      repeat_time: 0.2
+      attack_name: 8
+    - start_time: 0
+      repeat_time: 0.6
+      attack_name: 0
+    move:
+      move_name: 3
+  drop:
+  - ghost
+  is_half_hp: 0

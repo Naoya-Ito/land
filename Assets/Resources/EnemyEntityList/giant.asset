@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aee3b36642ee490ea060ea5390d83d9, type: 3}
+  m_Name: giant
+  m_EditorClassIdentifier: 
+  name: "\u30B8\u30E3\u30A4\u30A2\u30F3\u30C8\u30BE\u30F3\u30D3"
+  lv: 9
+  speed: 2
+  speedRepeat: 2
+  image: giant
+  start_text: 
+  dead_text: "\u300C\u3050\u307D\u3049\u2026\u2026\u300D"
+  isTrap: 0
+  isBoss: 0
+  attacks:
+  - attack_text: "\u3076\u3093\u307E\u308F\u3057"
+    circle_speed: 0
+    is_change_size: 1
+    attacks:
+    - start_time: 0
+      repeat_time: 0.2
+      attack_name: 7
+    - start_time: 0
+      repeat_time: 0.3
+      attack_name: 7
+    - start_time: 0
+      repeat_time: 0.4
+      attack_name: 7
+    move:
+      move_name: 2
+  - attack_text: "\u6BBA\u622E"
+    circle_speed: 2
+    is_change_size: 1
+    attacks:
+    - start_time: 2.3
+      repeat_time: 0.1
+      attack_name: 8
+    - start_time: 2.3
+      repeat_time: 0.1
+      attack_name: 9
+    - start_time: 2.3
+      repeat_time: 0.1
+      attack_name: 7
+    - start_time: 2.3
+      repeat_time: 0.1
+      attack_name: 7
+    move:
+      move_name: 2
+  drop: []
+  base_drop_lv: 0

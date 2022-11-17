@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc32c7180220b40fcb0eb971ccaa1592, type: 3}
+  m_Name: 01_koko
+  m_EditorClassIdentifier: 
+  event_text: "\u76EE\u304C\u899A\u3081\u308B\u3068\u3001\n\u541B\u306F\u6DF1\u3044\u9727\u306E\u4E2D\u306B\u3044\u305F\u3002"
+  place_text: "\u59CB\u307E\u308A\u306E\u5834\u6240"
+  chara_text: 
+  image: 
+  bg: bg_forest
+  is_choice_three_rows: 0
+  choices:
+  - choice_text: "\u3053\u3053\u306F\u2026\u2026\u3069\u3053\u3060\uFF1F"
+    key_name: 
+    key_category: 
+    random_keys: []
+    get_card: 
+    get_gold: 0
+    change_hp: 0
+    dead_page: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+  - choice_text: "\u79C1\u306F\u2026\u2026\u8AB0\u3060\uFF1F"
+    key_name: 
+    key_category: 
+    random_keys: []
+    get_card: 
+    get_gold: 0
+    change_hp: 0
+    dead_page: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 

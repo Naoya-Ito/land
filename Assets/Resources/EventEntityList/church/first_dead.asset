@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc32c7180220b40fcb0eb971ccaa1592, type: 3}
+  m_Name: first_dead
+  m_EditorClassIdentifier: 
+  event_text: "\u300C\u304A\u304A\u3001\u65C5\u4EBA\u3088\u3002\n\u3000\u3042\u306E\u7015\u6B7B\u306E\u72B6\u614B\u304B\u3089\u76EE\u899A\u3081\u308B\u3068\u306F\u2026\u2026\n\u3000\u3053\u308C\u305E\u795E\u306E\u5947\u8DE1\u3067\u3059\uFF01\u300D"
+  place_text: 
+  chara_text: 
+  image: 
+  bg: 
+  choices:
+  - choice_text: "\u795E\u3088\u30B5\u30F3\u30AD\u30E5\u30FC"
+    key_name: first_dead2
+    key_category: 
+    random_keys: []
+    get_card: 
+    get_gold: 0
+    change_hp: 0
+    dead_page: 

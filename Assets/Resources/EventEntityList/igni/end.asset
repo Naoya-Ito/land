@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc32c7180220b40fcb0eb971ccaa1592, type: 3}
+  m_Name: end
+  m_EditorClassIdentifier: 
+  event_text: "\u300C\u6570\u65E5\u304A\u304D\u306B\u30A2\u30F3\u30C7\u30C3\u30C9\u306E\u5927\u7FA4\u304C\u62BC\u3057\u5BC4\u305B\u3066\u304F\u308B\u3002\n
+    \u305D\u308C\u307E\u3067\u306B\u5DF1\u3092\u935B\u3048\u3001\n \u751F\u304D\u6B8B\u308C\u308B\u3088\u3046\u5DE5\u592B\u3092\u51DD\u3089\u3059\u4E8B\u3060\u300D"
+  place_text: 
+  chara_text: 
+  image: 
+  bg: 
+  bgm: 
+  insteadEvent:
+    flag_name: 
+    name: 
+  choices:
+  - choice_text: "\u308F\u304B\u308A\u307E\u3057\u305F"
+    key_name: end2
+    key_category: 
+    random_keys: []
+    get_card: 
+    get_gold: 0
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0

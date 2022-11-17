@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc32c7180220b40fcb0eb971ccaa1592, type: 3}
+  m_Name: zombi_win
+  m_EditorClassIdentifier: 
+  event_text: "\u898B\u4E8B\u3060\u3001\u541B\u306E\u6BBA\u4EBA\u7D1A\u30D1\u30F3\u30C1\u306F\u8CDE\u8CDB\u306B\u5024\u3059\u308B\uFF01\n\n\u3060\u304C\u3001\u76F8\u624B\u304C\u60AA\u304B\u3063\u305F\u3088\u3046\u3060\u3002"
+  place_text: "\u6FC3\u9727\u306E\u68EE"
+  chara_text: 
+  image: zombi
+  bg: 
+  is_choice_three_rows: 0
+  choices:
+  - choice_text: "\u307E\u3060\u8D77\u304D\u4E0A\u304C\u308B\u3068\u3044\u3046\u306E\u304B\u2026\u2026"
+    key_name: zombi_win2
+    key_category: 
+    random_keys: []
+    get_card: 
+    get_gold: 0
+    change_hp: 0
+    dead_page: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 

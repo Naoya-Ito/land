@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc32c7180220b40fcb0eb971ccaa1592, type: 3}
+  m_Name: start
+  m_EditorClassIdentifier: 
+  event_text: "\u7814\u7A76\u5BA4\u306F\u8001\u673D\u5316\u3057\u57C3\u304C\u6E9C\u307E\u3063\u3066\u3044\u308B\u3002\n\u4EBA\u306E\u6C17\u914D\u306F\u306A\u3044\u3002"
+  place_text: 
+  chara_text: 
+  image: 
+  bg: 
+  bgm: 
+  right_card: 
+  center_card: 
+  left_card: 
+  clicked_change_key: 
+  clicked_change_val: 0
+  insteadEvent:
+    key: 
+    value_int: 0
+    value_str: 
+    event_name: 
+  choices:
+  - choice_text: "\u6B7B\u970A\u8853\u306E\u8CC7\u6599\u3092\u898B\u308B"
+    key_name: info
+    key_category: 
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: 
+    change_val: 0
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0
+  - choice_text: "\u738B\u56FD\u306E\u8ABF\u67FB\u66F8"
+    key_name: kingdom
+    key_category: 
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: 
+    change_val: 0
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0
+  - choice_text: "\u7ACB\u3061\u53BB\u308B"
+    key_name: exit
+    key_category: bouken_mori
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: 
+    change_val: 0
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0
+  isHeal: 0

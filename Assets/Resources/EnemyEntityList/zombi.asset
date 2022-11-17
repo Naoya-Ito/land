@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aee3b36642ee490ea060ea5390d83d9, type: 3}
+  m_Name: zombi
+  m_EditorClassIdentifier: 
+  name: "\u30BE\u30F3\u30D3"
+  lv: 1
+  speed: 5
+  speedRepeat: 3
+  image: zombi
+  start_text: "\u300C\u3046\u2026\u2026\u3041\u2026\u2026\u300D"
+  dead_text: "\u300C\u3044\u305F\u2026\u2026\u2026\u3043\u2026\u300D"
+  isTrap: 0
+  isBoss: 0
+  attacks:
+  - attack_text: "\u92ED\u3044\u722A"
+    circle_speed: 4
+    is_change_size: 0
+    attacks:
+    - start_time: 1
+      repeat_time: 1.3
+      attack_name: 0
+    move:
+      move_name: 1
+  - attack_text: "\u565B\u307F\u3064\u304D"
+    circle_speed: 3
+    is_change_size: 0
+    attacks:
+    - start_time: 0
+      repeat_time: 0.5
+      attack_name: 5
+    move:
+      move_name: 0
+  drop:
+  - mini_sword
+  - mgi_up
+  - str_up
+  - day
+  is_half_hp: 0

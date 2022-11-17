@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc32c7180220b40fcb0eb971ccaa1592, type: 3}
+  m_Name: start
+  m_EditorClassIdentifier: 
+  event_text: "\u300C\u4FFA\u306E\u540D\u524D\u306F\u30E9\u30A4\u30FB\u30D0\u30EB\u30BA\u3002\n\u4EBA\u306F\u4FFA\u3092\u30AB\u30FC\u30C9\u5927\u597D\u304D\u304A\u3058\u3055\u3093\u3068\u547C\u3076\u300D"
+  place_text: 
+  chara_text: 
+  image: 
+  bg: 
+  choices:
+  - choice_text: "\u8272\u3005\u6559\u3048\u3066\u304F\u3060\u3055\u3044"
+    key_name: teach
+    key_category: 
+    random_keys: []
+    get_card: 
+    get_gold: 0
+    change_hp: 0
+    dead_page: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+  - choice_text: "\u304B\u304B\u3063\u3066\u3053\u3044"
+    key_name: attack
+    key_category: 
+    random_keys: []
+    get_card: 
+    get_gold: 0
+    change_hp: 0
+    dead_page: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+  - choice_text: "\u3055\u3088\u3046\u306A\u3089"
+    key_name: start
+    key_category: people
+    random_keys: []
+    get_card: 
+    get_gold: 0
+    change_hp: 0
+    dead_page: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 

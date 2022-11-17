@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aee3b36642ee490ea060ea5390d83d9, type: 3}
+  m_Name: goblin
+  m_EditorClassIdentifier: 
+  name: "\u30B4\u30D6\u30EA\u30F3"
+  lv: 2
+  speed: 3
+  speedRepeat: 2
+  image: goblin
+  start_text: "\u6575\u610F\u306B\u6E80\u3061\u305F\u76EE\u3067\u541B\u3092\u898B\u3066\u3044\u308B\uFF01\uFF01"
+  dead_text: "\u30B0\u30AE\u30E3\u30A2\uFF01"
+  isTrap: 0
+  isBoss: 0
+  attacks:
+  - attack_text: "\u4F53\u5F53\u305F\u308A\uFF01"
+    circle_speed: 3
+    is_change_size: 0
+    attacks:
+    - start_time: 0
+      repeat_time: 1
+      attack_name: 0
+    - start_time: 0
+      repeat_time: 1
+      attack_name: 4
+    move:
+      move_name: 2
+  drop:
+  - goblin
+  - str_up
+  - str_up
+  base_drop_lv: 1

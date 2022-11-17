@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc32c7180220b40fcb0eb971ccaa1592, type: 3}
+  m_Name: igni_first2
+  m_EditorClassIdentifier: 
+  event_text: "\u5263\u58EB\u306F\u5263\u3092\u6B63\u773C\u306B\u69CB\u3048\u3001\u30BE\u30F3\u30D3\u3078\u3068\u5411\u304B\u3044\u75BE\u99C6\u3059\u308B\u3002\n\u52DD\u8CA0\u306F\u4E00\u77AC\u3002\n\u5727\u5012\u7684\u306A\u5263\u6280\u306E\u524D\u306B\u3001\u30BE\u30F3\u30D3\u306F\u77AC\u65AD\u3055\u308C\u305F\u3002"
+  place_text: "\u6FC3\u9727\u306E\u68EE"
+  chara_text: 
+  image: igunius
+  bg: 
+  bgm: 
+  insteadEvent:
+    flag_name: 
+    name: 
+  choices:
+  - choice_text: "\u3084\u3063\u305F\u305E\uFF01"
+    key_name: self
+    key_category: op_igni
+    random_keys: []
+    get_card: 
+    get_gold: 0
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0

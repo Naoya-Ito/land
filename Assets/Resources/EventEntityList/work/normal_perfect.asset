@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc32c7180220b40fcb0eb971ccaa1592, type: 3}
+  m_Name: normal_perfect
+  m_EditorClassIdentifier: 
+  event_text: "\u541B\u306F\u5049\u5927\u306A\u6210\u679C\u3092\u6B8B\u3057\u305F\u3002\n\u591A\u304F\u306E\u8005\u304C\u541B\u3092\u8CDE\u8CDB\u305B\u305A\u306B\u306F\u3044\u3089\u308C\u306A\u3044\uFF01"
+  place_text: 
+  chara_text: no
+  image: no
+  bg: 
+  bgm: 
+  right_card: 
+  center_card: 
+  left_card: 
+  insteadEvent:
+    key: 
+    value_int: 0
+    value_str: 
+    event_name: 
+  choices:
+  - choice_text: "\u3084\u3063\u305F\u305E\uFF01"
+    key_name: normal_perfect2
+    key_category: 
+    random_keys: []
+    get_card: 
+    change_key: gold
+    change_val: 30
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0

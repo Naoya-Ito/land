@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aee3b36642ee490ea060ea5390d83d9, type: 3}
+  m_Name: father
+  m_EditorClassIdentifier: 
+  name: "\u30AC\u30A4\u30B9\u30B3\u30F3\u795E\u7236"
+  lv: 12
+  speed: 5
+  speedRepeat: 3
+  image: father
+  start_text: "\u300C\u79C1\u3078\u306E\u53CD\u9006\u306F\u795E\u3078\u306E\u53CD\u9006\u3002\n
+    \u6B7B\u3092\u6301\u3063\u3066\u511F\u3044\u306A\u3055\u3044\u300D"
+  dead_text: "\u300C\u795E\u3088\u2026\u2026\u306A\u305C\u79C1\u3092\u6551\u308F\u306A\u3044\u306E\u3067\u3059\u2026\u2026\u300D"
+  isTrap: 0
+  isBoss: 0
+  attacks:
+  - attack_text: "\u300C\u88C1\u304D\u306E\u96F7\u3088\u2026\u2026\u843D\u3061\u308D\u300D"
+    circle_speed: 9
+    is_change_size: 0
+    attacks:
+    - start_time: 0
+      repeat_time: 0.9
+      attack_name: 3
+    - start_time: 0
+      repeat_time: 0.9
+      attack_name: 3
+    move:
+      move_name: 0
+  drop:
+  - yakusou
+  - agi_up
+  - thunder
+  - mgi_up
+  - mini_sword
+  - str_up
+  base_drop_lv: 1

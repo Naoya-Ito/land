@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 282e839eccbdf4ae48f1e5575e6ba17e, type: 3}
+  m_Name: wizard
+  m_EditorClassIdentifier: 
+  title: "\u9B54\u8853\u5E2B"
+  text: "MP2\u306E\u30AB\u30FC\u30C9\u4F7F\u7528\u5F8C\u3001\n<sprite name=\"mgi\">+7"
+  cost: 50

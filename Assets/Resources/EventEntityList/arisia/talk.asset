@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc32c7180220b40fcb0eb971ccaa1592, type: 3}
+  m_Name: talk
+  m_EditorClassIdentifier: 
+  event_text: "\u300C\u304A\u9858\u3044\u2026\u2026\u3069\u3046\u304B\u30D1\u30D1\u3068\u30DE\u30DE\u306E\u4EC7\u3092\u53D6\u3063\u3066\u300D"
+  place_text: "\u88AB\u5BB3\u8005\u306E\u5BB6"
+  chara_text: 
+  image: 
+  bg: 
+  bgm: 
+  right_card: 
+  center_card: 
+  left_card: 
+  clicked_change_key: 
+  clicked_change_val: 0
+  insteadEvent:
+    key: flag
+    value_int: 0
+    value_str: arisia_quest_comp
+    event_name: arisia/comp
+  choices:
+  - choice_text: "\u5FA9\u8B90\u306F\u4FFA\u306B\u4EFB\u305B\u308D"
+    key_name: quest
+    key_category: 
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: bonus
+    change_val: 10
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0
+  - choice_text: "\u79C1\u304C\u72AF\u4EBA\u3060"
+    key_name: murder
+    key_category: 
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: 
+    change_val: 0
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0
+  - choice_text: "\u5831\u916C\u306F\u3044\u304F\u3089\u3060\uFF1F"
+    key_name: quest_gold
+    key_category: 
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: 
+    change_val: 0
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0
+  - choice_text: "\u5FA9\u8B90\u3092\u3084\u3081\u308B\u3088\u3046\u8AAC\u5F97\u3059\u308B"
+    key_name: 3
+    key_category: 
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: 
+    change_val: 0
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0
+  - choice_text: "\u4ED6\u306E\u8A71\u3092\u3059\u308B"
+    key_name: 4
+    key_category: 
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: 
+    change_val: 0
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0
+  - choice_text: "\u3055\u3088\u3046\u306A\u3089"
+    key_name: start
+    key_category: 
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: 
+    change_val: 0
+    change_hp: 0
+    dead_page: 
+    set_flag: 
+    battle_info:
+      enemy_name: 
+      win_page: 
+      lose_page: 
+      bgm: 
+    isDayPast: 0
+  isHeal: 0
