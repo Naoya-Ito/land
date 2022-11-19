@@ -8,13 +8,6 @@ public class TitleMgr : MonoBehaviour{
   public GameObject pv_text;
 
   void Start(){
-    if(CommonUtil.isPV()){
-      int pv_level = DataMgr.GetInt("pv_level");
-      if(pv_level == PVModel.STEP_PV_TITLE) {
-        updatePVScene();
-      }
-      GameObject.Find("CardButton").SetActive(false);
-    }
   }
 
   private int ura = 0;

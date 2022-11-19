@@ -78,7 +78,6 @@ public class SkillModel : MonoBehaviour{
     if(!isGetSkill(key)){
       DataMgr.SetBool($"skill_{key}", true);
       DataMgr.Increment("gold", -1*cost);
-      RightArea.updateGoldWithData();
       SkillList.updateCostWithData();
     }
   }
@@ -88,7 +87,6 @@ public class SkillModel : MonoBehaviour{
       DataMgr.SetBool($"skill_{key}", false);
       DataMgr.Increment("gold", cost);
 
-      RightArea.updateGoldWithData();
       SkillList.updateCostWithData();
     }
   }

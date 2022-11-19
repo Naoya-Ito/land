@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class CardButton : MonoBehaviour
 {
+    /*
   [SerializeField] Image CardArea;
 
   public void pressButton(){
@@ -25,4 +26,5 @@ public class CardButton : MonoBehaviour
     CardList.instance.updateCardList(deck);
     CardList.instance.updateTitle("カード一覧");
   }
+  */
 }

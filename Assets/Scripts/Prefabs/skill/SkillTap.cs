@@ -24,7 +24,6 @@ public class SkillTap : MonoBehaviour, IPointerClickHandler {
         SkillModel.getSkill(skillID, skill_model.cost);
         skill_controller.model.isGet = true;
         skill_controller.view.updateView(skill_controller.model);
-        RightArea.updateGold(DataMgr.GetInt("gold"));
       }
     }
 

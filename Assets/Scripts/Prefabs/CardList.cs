@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CardList : MonoBehaviour{
+  /*
   [SerializeField] CardController cardPrefab;
   public RectTransform contentRectTransform;
 
@@ -16,16 +17,6 @@ public class CardList : MonoBehaviour{
     }
   }
 
-/*
-  void Start(){
-    List<string> deck = new List<string>() {
-       "punch", "mountain", "drop", "curse", 
-       "mgi_up", "fire", "mini_sword",
-       "ice_sword"
-    };    
-    updateCardList(deck);
-  }
-*/
   public void updateCardList(List<string> list){
     foreach(string key in list) {
       CardController card = Instantiate(cardPrefab, contentRectTransform);
@@ -46,4 +37,5 @@ public class CardList : MonoBehaviour{
       Debug.Log("SettingMenu is not found.");
     }
   }
+  */
 }
