@@ -20,8 +20,8 @@ public class StartButtonModel : MonoBehaviour
     isButtonPushed = true;
 
     DataMgr.SetBool("pv_mode", false);
-//    BGMMgr.instance.changeBGM("field");
-    BGMMgr.instance.stopMusic();
+    BGMMgr.instance.changeBGM("field");
+//    BGMMgr.instance.stopMusic();
 
     // 初回時のみ、初期データを作る
     if(!DataMgr.GetBool("is_start")) {

@@ -14,7 +14,6 @@ public class TitleMgr : MonoBehaviour{
   void Update(){
     if(Input.GetKeyUp(KeyCode.K)) ura = 1;
     if(Input.GetKeyUp(KeyCode.A)) {
-      Debug.Log("ura");
       if(ura == 1) ura += 1;
       if(ura == 4) urawaza();
     }

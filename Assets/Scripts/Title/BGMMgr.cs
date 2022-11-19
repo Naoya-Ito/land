@@ -13,15 +13,12 @@ public class BGMMgr : MonoBehaviour{
   private double FadeOutSeconds = 2.0;
   double FadeDeltaTime = 0;
 
-  static int BGM_OP = 0;
-  static int BGM_LEGEND = 1;
-  static int BGM_GOD = 2;
-  static int BGM_AHURERA = 3;
-  static int BGM_TITLE = 4;
-  static int BGM_OP2 = 5;
-  static int BGM_FIELD = 6;
-  static int BGM_BATTLE_NORMAL = 7;
-  static int BGM_WIN = 8;
+  static int BGM_TITLE = 0;
+  static int BGM_OP = 1;
+  static int BGM_FIELD = 2;
+  static int BGM_GAMEOVER = 3;
+  static int BGM_ENDING = 4;
+  static int BGM_WIN = 5;
 
   private void Awake(){
     if(instance == null) {
@@ -81,23 +78,14 @@ public class BGMMgr : MonoBehaviour{
     case "op":
       BGM_NO = BGM_OP;
       break;
-    case "op2":
-      BGM_NO = BGM_OP2;
-      break;
-    case "battle_god":
-      BGM_NO = BGM_GOD;
-      break;
     case "field":
       BGM_NO = BGM_FIELD;
-      break;
-    case "normal_battle":
-      BGM_NO = BGM_BATTLE_NORMAL;
       break;
     case "win":
       BGM_NO = BGM_WIN;
       break;
     case "ending":
-      BGM_NO = BGM_AHURERA;
+      BGM_NO = BGM_ENDING;
       break;
     case "title":
       BGM_NO = BGM_TITLE;
