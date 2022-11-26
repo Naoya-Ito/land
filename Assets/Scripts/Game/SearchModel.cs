@@ -29,18 +29,35 @@ public class SearchModel : MonoBehaviour
   void Update() {
       
   }
-
   
   public void pushedSearchButton(){
     updateSearcList();
   }
 
   public void updateSearcList(){
-    Debug.Log("update search list");
     foreach(string key in SearchModel.all_list) {
       CardController card = Instantiate(cardPrefab, cardArea);
       card.Init(key);
-      Debug.Log($"update search list key={key}");
     }
+  }
+
+  public void updateSubMenu(CardModel card_model){
+    SubMenu.instance.updateInfo(card_model);
+  }
+
+  public static void useCard(string key) {
+    Debug.Log($"use card. key={key}");
+    switch(key) {
+      case "forest":
+        DataMgr.Increment("wood");
+        break;
+      case "sea":
+        break;
+      default:
+        break;
+    }
+
+    SubeMenu.instance.hide();
+
   }
 }

@@ -15,7 +15,12 @@ public class CardMove : MonoBehaviour, IPointerClickHandler {
 //    if(card_model.cantUse) return;
 
     string key = card_controller.model.cardID;
-//    BattleCardMgr.instance.playCard(card_controller);
-    Debug.Log($"tapped card_id={key}");
+
+    if(SearchModel.all_list.Contains(key)) {
+      SearchModel.instance.updateSubMenu(card_model);
+//      SearchModel.instance.useCard();
+    }
+
+    SubMenu.instance.show();
   }
 }
