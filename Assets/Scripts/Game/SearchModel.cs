@@ -57,7 +57,7 @@ public class SearchModel : MonoBehaviour
         break;
     }
 
-    SubeMenu.instance.hide();
+    SubMenu.instance.hide();
 
   }
 }

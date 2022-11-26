@@ -15,7 +15,7 @@ MonoBehaviour:
   name: "\u68EE\u6797"
   image: forest
   card_type: 0
-  time: 1
-  use_resource: 
-  get_resource: 
-  description: 
+  time_cost: 1.1
+  item_cost: "\u4F53\u529B -5\n\u6B63\u6C17\u5EA6 -2"
+  get_item: "100%\u3000\u6728\u6750\n50%\u3000\u76AE"
+  description: "\u8272\u3005\u306A\u7D20\u6750\u304C\u898B\u3064\u304B\u308A\u305D\u3046\u3060\u3002"

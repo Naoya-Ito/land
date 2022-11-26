@@ -6,7 +6,7 @@ public class TapEffect : MonoBehaviour{
     public static TapEffect instance = null;
 
     public float deleteTime = 1.0f;
-    public BloodObject blood;
+//    public BloodObject blood;
 
     private void Awake(){
       if(instance == null) {
@@ -31,7 +31,7 @@ public class TapEffect : MonoBehaviour{
         mousePosition.z = 3f;
 
         Vector3 world_pos = Camera.main.ScreenToWorldPoint(mousePosition);
-        Instantiate(blood, world_pos, Quaternion.identity);
+//        Instantiate(blood, world_pos, Quaternion.identity);
       }
     }
 }

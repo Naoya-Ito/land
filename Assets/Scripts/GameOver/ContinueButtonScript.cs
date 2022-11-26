@@ -18,7 +18,6 @@ public class ContinueButtonScript : MonoBehaviour{
   }
 
   private void regeneratePlayer(){
-    DataMgr.countUpDeath();
     DataMgr.maxHeadl();
     switch(DataMgr.GetInt("dead_count")){
     case 1:

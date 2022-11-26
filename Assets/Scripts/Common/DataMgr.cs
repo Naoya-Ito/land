@@ -131,12 +131,4 @@ public class DataMgr : MonoBehaviour{
     int hp = GetInt("hp");
     return hp <= 0;
   }
-
-  public static void countUpDeath(){
-    Increment("dead_count");
-  }
-
-  static public void dayPast(){
-    Increment("day");
-  }
 }
