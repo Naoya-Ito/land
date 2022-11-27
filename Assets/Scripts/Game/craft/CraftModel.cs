@@ -34,6 +34,7 @@ public class CraftModel : MonoBehaviour
   }
 
   public void updateCraftMenu(CardModel card_model){
+    card_model.item_cost = getItemCostText(card_model);
     CraftMenu.instance.updateInfo(card_model);
     CommonUtil.changeText("get_item_title", "");
   }
@@ -49,5 +50,19 @@ public class CraftModel : MonoBehaviour
     }
     CraftMenu.instance.hide();
   }
+
+  public string getItemCostText(CardModel card_model){
+    switch(card_model.cardID) {
+      case "fire":
+        return $"木材({DataMgr.GetInt("wood")})　　2";
+        break;
+      default:
+        break;
+    }
+    return "";
+  }
+
+  // TODO OKボタン押せるかどうかの判定
+
 
 }

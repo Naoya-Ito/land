@@ -9,7 +9,6 @@ public class CraftMenu : MonoBehaviour {
   public TextMeshProUGUI name;
   public TextMeshProUGUI time_cost;
   public TextMeshProUGUI item_cost;
-  public TextMeshProUGUI get_item;
   public TextMeshProUGUI description;
 
   public static CraftMenu instance = null;
@@ -39,7 +38,6 @@ public class CraftMenu : MonoBehaviour {
     name.text = model.name;
     time_cost.text = model.time_cost;
     item_cost.text = model.item_cost;
-    get_item.text = model.get_item;
     description.text = model.description;
 
     selected_card = model.cardID;
