@@ -33,8 +33,8 @@ public class CraftModel : MonoBehaviour
     }
   }
 
-  public void updateSubMenu(CardModel card_model){
-    SubMenu.instance.updateInfo(card_model);
+  public void updateCraftMenu(CardModel card_model){
+    CraftMenu.instance.updateInfo(card_model);
     CommonUtil.changeText("get_item_title", "");
   }
 
@@ -47,7 +47,7 @@ public class CraftModel : MonoBehaviour
       default:
         break;
     }
-    SubMenu.instance.hide();
+    CraftMenu.instance.hide();
   }
 
 }
