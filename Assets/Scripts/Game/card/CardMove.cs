@@ -18,6 +18,7 @@ public class CardMove : MonoBehaviour, IPointerClickHandler {
 
     if(SearchModel.all_list.Contains(key)) {
       SearchModel.instance.updateSubMenu(card_model);
+      SearchMenu.instance.show();
 //      SearchModel.instance.useCard();
     }
     if(CraftModel.all_list.Contains(key)) {
@@ -25,6 +26,6 @@ public class CardMove : MonoBehaviour, IPointerClickHandler {
 //      SearchModel.instance.useCard();
     }
 
-    SubMenu.instance.show();
+//    SubMenu.instance.show();
   }
 }

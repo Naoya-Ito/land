@@ -35,8 +35,7 @@ public class SearchModel : MonoBehaviour
   }
 
   public void updateSubMenu(CardModel card_model){
-    SubMenu.instance.updateInfo(card_model);
-    CommonUtil.changeText("get_item_title", "得られるもの");
+    SearchMenu.instance.updateInfo(card_model);
   }
 
   public static void useCard(string key) {
@@ -50,6 +49,6 @@ public class SearchModel : MonoBehaviour
       default:
         break;
     }
-    SubMenu.instance.hide();
+    SearchMenu.instance.hide();
   }
 }
