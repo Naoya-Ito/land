@@ -13,8 +13,8 @@ public class CardModel : MonoBehaviour{
   public string get_item;
   public string description;
 
-  public CardModel(string cardID){
-    CardEntity cardEntity = Resources.Load<CardEntity>("CardEntityList/" + cardID);
+  public CardModel(string cardID, string category){
+    CardEntity cardEntity = Resources.Load<CardEntity>($"CardEntityList/{category}/{cardID}");
     if(cardEntity == null) {
       Debug.Log($"card not exist. id={cardID}");
       return;

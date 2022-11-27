@@ -10,8 +10,8 @@ public class CardController : MonoBehaviour{
     view = GetComponent<CardView>();
   }
 
-  public void Init(string cardID){
-    model = new CardModel(cardID);
+  public void Init(string cardID, string category){
+    model = new CardModel(cardID, category);
     view.updateView(this.model);
   }
 

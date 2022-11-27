@@ -9,7 +9,7 @@ public class CardEntity : ScriptableObject {
   public string image;
   public enum card_type_enum {
     search,
-    create
+    craft
   }
   [SerializeField] public card_type_enum card_type = card_type_enum.search;
   public float time_cost;

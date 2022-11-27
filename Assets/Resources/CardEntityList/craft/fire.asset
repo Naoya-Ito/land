@@ -9,17 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c72a59e6acfd42c2a1d01f092089244, type: 3}
-  m_Name: op
+  m_Script: {fileID: 11500000, guid: 52fb1d61a1843480daa5515c8e6af13e, type: 3}
+  m_Name: fire
   m_EditorClassIdentifier: 
-  next_scene: game
-  images:
-  - op/op1
-  - op/op2
-  - op/op3
-  - op/op4
-  - op/op5
-  - op/op6
-  - op/op7
-  - op/op8
-  - op/op9
+  name: 
+  image: 
+  card_type: 0
+  time_cost: 0
+  item_cost: 
+  get_item: 
+  description: 

@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SearchModel : MonoBehaviour
+public class CraftModel : MonoBehaviour
 {
   [SerializeField] CardController cardPrefab;
   public RectTransform cardArea;
 
   public static List<string> all_list = new List<string>() {
-    "forest",
-    "sea"
+    "fire",
   };
 
-  public static SearchModel instance = null;
+  public static CraftModel instance = null;
 
   private void Awake(){
     if(instance == null) {
@@ -22,34 +21,33 @@ public class SearchModel : MonoBehaviour
     }
   }
 
-  public void pushedSearchButton(){
-    updateSearcList();
+  public void pushedCraftButton(){
+    updateCraftList();
   }
 
-  public void updateSearcList(){
+  public void updateCraftList(){
     CardArea.instance.resetAllCard();
-    foreach(string key in SearchModel.all_list) {
+    foreach(string key in CraftModel.all_list) {
       CardController card = Instantiate(cardPrefab, cardArea);
-      card.Init(key, "search");
+      card.Init(key, "craft");
     }
   }
 
   public void updateSubMenu(CardModel card_model){
     SubMenu.instance.updateInfo(card_model);
-    CommonUtil.changeText("get_item_title", "得られるもの");
+    CommonUtil.changeText("get_item_title", "");
   }
 
   public static void useCard(string key) {
     Debug.Log($"use card. key={key}");
     switch(key) {
-      case "forest":
+      case "fire":
         DataMgr.Increment("wood");
-        break;
-      case "sea":
         break;
       default:
         break;
     }
     SubMenu.instance.hide();
   }
+
 }
