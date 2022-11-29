@@ -8,5 +8,8 @@ public class LandDataMgr : MonoBehaviour
     foreach (string key in ItemModel.all_list){
       DataMgr.SetInt(key, 0);
     }
+    foreach (string key in CraftModel.all_list){
+      DataMgr.SetBool(key, false);
+    }
   }
 }

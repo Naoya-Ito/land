@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CraftModel : MonoBehaviour
+public class CookModel : MonoBehaviour
 {
   [SerializeField] CardController cardPrefab;
   public RectTransform cardArea;
 
   public static List<string> all_list = new List<string>() {
-    "fire",
+    "",
   };
 
-  public static CraftModel instance = null;
+  public static CookModel instance = null;
 
   private void Awake(){
     if(instance == null) {
@@ -22,29 +22,25 @@ public class CraftModel : MonoBehaviour
   }
 
   public void pushedCraftButton(){
-    updateCraftList();
+    updateCookList();
   }
 
-  public void updateCraftList(){
+  public void updateCookList(){
     CardArea.instance.resetAllCard();
-    foreach(string key in CraftModel.all_list) {
-      CardController card = Instantiate(cardPrefab, cardArea);
-      card.Init(key, "craft");
+    foreach(string key in CookModel.all_list) {
+//      CardController card = Instantiate(cardPrefab, cardArea);
+//      card.Init(key, "cook");
     }
   }
 
-  public void updateCraftMenu(CardModel card_model){
+  public void updateCookMenu(CardModel card_model){
     card_model.item_cost = getItemCostText(card_model);
-    CraftMenu.instance.updateInfo(card_model);
+    CookMenu.instance.updateInfo(card_model);
   }
 
   public static void useCard(string key) {
-    Debug.Log($"use card. key={key}");
     switch(key) {
-      case "fire":
-        DataMgr.Increment("wood", -2);
-        DataMgr.SetBool("fire", true);
-        ButtonArea.instance.addButton("cook");
+      case "":
         break;
       default:
         break;
@@ -54,7 +50,7 @@ public class CraftModel : MonoBehaviour
 
   public string getItemCostText(CardModel card_model){
     switch(card_model.cardID) {
-      case "fire":
+      case "":
         return $"木材({DataMgr.GetInt("wood")})　　2";
         break;
       default:

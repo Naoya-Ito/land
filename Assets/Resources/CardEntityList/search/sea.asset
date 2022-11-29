@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: sea
   m_EditorClassIdentifier: 
   name: "\u7802\u6D5C"
-  image: field
+  image: search/sea
   card_type: 0
   time_cost: 0.9
   item_cost: "\u4F53\u529B -3\n\u6B63\u6C17\u5EA6 -3"

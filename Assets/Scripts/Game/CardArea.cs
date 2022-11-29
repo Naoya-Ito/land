@@ -14,7 +14,12 @@ public class CardArea : MonoBehaviour
       Destroy(this.gameObject);
     }
   }
-
+/*
+    foreach(string key in SearchModel.all_list) {
+      CardController card = Instantiate(cardPrefab, cardArea);
+      card.Init(key, "search");
+    }
+*/
   public void resetAllCard(){
     CardController[] hands = cardArea.GetComponentsInChildren<CardController>();
     foreach (CardController card in hands){
