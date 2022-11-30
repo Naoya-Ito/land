@@ -6,12 +6,14 @@ public class GameSceneMgr : MonoBehaviour
 {
 
   // 画像
-  // TODO タイトル画面の画像
-  // TODO 浜辺探索
-  // TODO 焚き火
+  // TODO 羊皮紙のメッセージエリア
 
   // TODO ステージ選択画面
 
+
+  // TODO ゲーム画面
+     // TODO HP、正気度の表示
+     // メイン文章の表示
 
   // TODO 探索で n, r, sr, ssr の判定
 
