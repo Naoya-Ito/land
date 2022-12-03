@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52fb1d61a1843480daa5515c8e6af13e, type: 3}
   m_Name: torch
   m_EditorClassIdentifier: 
-  name: 
+  name: "\u305F\u3044\u307E\u3064"
   image: 
-  card_type: 0
+  card_type: 1
   time_cost: 0
-  item_cost: 
+  item_cost: "\u6728\u67502"
   get_item: 
-  description: 
+  description: "\u3053\u308C\u3092\u88C5\u5099\u3059\u308C\u3070\u6697\u95C7\u3082\u30C1\u30E3\u30E9\u30FB\u30D8\u30C3\u30C1\u30E3\u30E9\u3060\u3002"

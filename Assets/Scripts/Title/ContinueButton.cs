@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 //using UnityEngine.SceneManagement;
 
-public class StartButtonModel : MonoBehaviour
+public class ContinueButton : MonoBehaviour
 {
-  private void  Start(){
+  private void Start(){
+    if(!DataMgr.GetBool("is_game")) {
+      Destroy(gameObject);
+    }
   }
 
   private bool isButtonPushed = false;
@@ -15,12 +18,7 @@ public class StartButtonModel : MonoBehaviour
     }
     isButtonPushed = true;
 
-    LandDataMgr.initData();
-
-    DataMgr.SetBool("pv_mode", false);
-
     BGMMgr.instance.changeBGM("field");
     CommonUtil.changeScene("GameScene");
   }
-
 }

@@ -43,10 +43,10 @@ public class CommonUtil : MonoBehaviour{
     if(target_text != null) {
       target_text.text = text;
     } else {
+      Debug.Log($"Warning!!! {key} is text. not tmp");
       Text target_text2 = GameObject.Find(key).GetComponent<Text>();
       target_text2.text = text;
 
-      Debug.Log($"Warning!!! {key} is text. not tmp");
     }
   }
 

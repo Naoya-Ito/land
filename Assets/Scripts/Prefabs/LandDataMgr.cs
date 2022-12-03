@@ -13,8 +13,8 @@ public class LandDataMgr : MonoBehaviour
     }
   }
 
-  public static initData(){
+  public static void initData(){
     DataMgr.SetInt("day", 1);
-    GameData.SetBool("is_game", true);
+    DataMgr.SetBool("is_game", true);
   }
 }

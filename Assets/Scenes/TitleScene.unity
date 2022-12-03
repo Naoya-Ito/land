@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 79288662}
   - component: {fileID: 79288661}
   m_Layer: 5
-  m_Name: ng_text
+  m_Name: continue_text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u5F37\u304F\u3066\u30CB\u30E5\u30FC\u30B2\u30FC\u30E0"
+  m_text: "\u7D9A\u304D\u304B\u3089"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de408dcc83aa54970a0d11573cccec0b, type: 2}
   m_sharedMaterial: {fileID: -8100950440747979635, guid: de408dcc83aa54970a0d11573cccec0b, type: 2}
@@ -1532,7 +1532,7 @@ GameObject:
   - component: {fileID: 1000646720}
   - component: {fileID: 1000646723}
   m_Layer: 5
-  m_Name: NewGameButton
+  m_Name: ContinueButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1545,7 +1545,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000646718}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1556,7 +1556,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -130}
+  m_AnchoredPosition: {x: 0, y: -70}
   m_SizeDelta: {x: 280, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1000646720
@@ -1604,7 +1604,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1000646723}
-        m_TargetAssemblyTypeName: NewGameButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: ContinueButton, Assembly-CSharp
         m_MethodName: PressStart
         m_Mode: 1
         m_Arguments:
@@ -2410,7 +2410,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -70}
+  m_AnchoredPosition: {x: 0, y: -130}
   m_SizeDelta: {x: 280, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1692590275
@@ -2577,7 +2577,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u5192\u967A\u3092\u59CB\u3081\u308B"
+  m_text: "\u30CB\u30E5\u30FC\u30B2\u30FC\u30E0"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de408dcc83aa54970a0d11573cccec0b, type: 2}
   m_sharedMaterial: {fileID: -8100950440747979635, guid: de408dcc83aa54970a0d11573cccec0b, type: 2}
