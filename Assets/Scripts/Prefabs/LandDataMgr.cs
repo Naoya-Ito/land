@@ -15,6 +15,29 @@ public class LandDataMgr : MonoBehaviour
 
   public static void initData(){
     DataMgr.SetInt("day", 1);
+    DataMgr.SetStr("time", "morning");
     DataMgr.SetBool("is_game", true);
+  }
+
+  public static void timePast(){
+    string time = DataMgr.GetStr("time");
+    switch(time) {
+      case "morning":
+        DataMgr.SetStr("time", "evening");
+        break;
+      case "evening":
+        DataMgr.SetStr("time", "sunset");
+        break;
+      case "sunset":
+        DataMgr.SetStr("time", "knight");
+        break;
+      case "knight":
+        DataMgr.SetStr("time", "morning");
+        DataMgr.Increment("day");
+        break;
+      default:
+        Debug.Log($"Error!! time past. unknown time={time}");
+        break;
+    }
   }
 }

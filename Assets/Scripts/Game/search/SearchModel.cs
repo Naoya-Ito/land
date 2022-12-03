@@ -44,8 +44,12 @@ public class SearchModel : MonoBehaviour
       case "forest":
         DataMgr.Increment("wood");
         CommonUtil.changeText("main_text", "木材を一つ見つけたぞ！");
+        NextButton.instance.hideCardAndShowButton();
         break;
       case "sea":
+        DataMgr.Increment("fish");
+        CommonUtil.changeText("main_text", "生魚を一つ見つけたぞ！");
+        NextButton.instance.hideCardAndShowButton();
         break;
       default:
         break;
