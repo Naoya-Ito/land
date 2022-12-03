@@ -43,6 +43,7 @@ public class SearchModel : MonoBehaviour
     switch(key) {
       case "forest":
         DataMgr.Increment("wood");
+        CommonUtil.changeText("text", "木材を一つ見つけたぞ！");
         break;
       case "sea":
         break;

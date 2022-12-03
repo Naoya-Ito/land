@@ -28,6 +28,8 @@ public class CraftModel : MonoBehaviour
   public void updateCraftList(){
     CardArea.instance.resetAllCard();
     foreach(string key in CraftModel.all_list) {
+      if(key == "fire" && DataMgr.GetBool("fire")) continue;
+
       CardController card = Instantiate(cardPrefab, cardArea);
       card.Init(key, "craft");
     }
@@ -45,6 +47,8 @@ public class CraftModel : MonoBehaviour
         DataMgr.Increment("wood", -2);
         DataMgr.SetBool("fire", true);
         ButtonArea.instance.addButton("cook");
+        CommonUtil.changeText("text", "焚き火を作る事に成功した！\n火……それは文明の証だ！");
+        CraftModel.instance.updateCraftList();
         break;
       default:
         break;

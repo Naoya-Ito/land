@@ -84,7 +84,6 @@ namespace Steamworks
 		// returns null if we are not an IP address.
 		public SteamNetworkingIPAddr GetIPAddr(){
 			throw new System.NotImplementedException();
-			// TODO: Should SteamNetworkingIPAddr be a class?
 			//       or should this return some kind of pointer instead?
 			//return NativeMethods.SteamAPI_SteamNetworkingIdentity_GetIPAddr(ref this);
 		}
