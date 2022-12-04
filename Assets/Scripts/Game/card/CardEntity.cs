@@ -9,10 +9,13 @@ public class CardEntity : ScriptableObject {
   public string image;
   public enum card_type_enum {
     search,
-    craft
+    craft,
+    cook,
+    move,
+    item,
+    party
   }
   [SerializeField] public card_type_enum card_type = card_type_enum.search;
   [Multiline] public string item_cost;
-  [Multiline] public string get_item;
   [Multiline] public string description;
 }

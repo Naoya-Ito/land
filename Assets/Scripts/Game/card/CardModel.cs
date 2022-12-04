@@ -24,7 +24,6 @@ public class CardModel : MonoBehaviour{
     this.image = cardEntity.image;
     this.card_type = cardEntity.card_type;
     this.item_cost = cardEntity.item_cost;
-    this.get_item = cardEntity.get_item;
     this.description = cardEntity.description;
     updateCard();
   }
