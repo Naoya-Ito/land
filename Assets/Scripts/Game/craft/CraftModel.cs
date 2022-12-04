@@ -49,6 +49,7 @@ public class CraftModel : MonoBehaviour
         ButtonArea.instance.addButton("cook");
         CommonUtil.changeText("main_text", "焚き火を作る事に成功した！\n火……それは文明の証だ！");
         CraftModel.instance.updateCraftList();
+        NextButton.instance.hideCardAndShowButton();
         break;
       default:
         break;

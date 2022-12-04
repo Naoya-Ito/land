@@ -36,5 +36,4 @@ public class NextButton : MonoBehaviour {
     LandDataMgr.timePast();
     CommonUtil.changeScene("GameScene");
   }
-
 }

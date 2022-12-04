@@ -12,7 +12,6 @@ public class CardEntity : ScriptableObject {
     craft
   }
   [SerializeField] public card_type_enum card_type = card_type_enum.search;
-  public float time_cost;
   [Multiline] public string item_cost;
   [Multiline] public string get_item;
   [Multiline] public string description;

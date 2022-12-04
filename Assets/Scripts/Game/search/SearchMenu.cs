@@ -7,8 +7,6 @@ using TMPro;
 public class SearchMenu : MonoBehaviour {
   public RectTransform search_menu;
   public TextMeshProUGUI name;
-  public TextMeshProUGUI time_cost;
-  public TextMeshProUGUI get_item;
   public TextMeshProUGUI description;
 
   public static SearchMenu instance = null;
@@ -36,10 +34,7 @@ public class SearchMenu : MonoBehaviour {
 
   public void updateInfo(CardModel model){
     name.text = model.name;
-    time_cost.text = model.time_cost;
-    get_item.text = model.get_item;
     description.text = model.description;
-
     selected_card = model.cardID;
   }
 

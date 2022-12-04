@@ -7,7 +7,6 @@ using TMPro;
 public class CraftMenu : MonoBehaviour {
   public RectTransform craft_menu;
   public TextMeshProUGUI name;
-  public TextMeshProUGUI time_cost;
   public TextMeshProUGUI item_cost;
   public TextMeshProUGUI description;
 
@@ -36,7 +35,6 @@ public class CraftMenu : MonoBehaviour {
 
   public void updateInfo(CardModel model){
     name.text = model.name;
-    time_cost.text = model.time_cost;
     item_cost.text = model.item_cost;
     description.text = model.description;
 
