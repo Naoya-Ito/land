@@ -15,6 +15,9 @@ public class LandDataMgr : MonoBehaviour
 
   public static void initData(){
     DataMgr.SetInt("day", 1);
+    DataMgr.SetInt("mp", 100);
+    DataMgr.SetInt("max_mp", 100);
+
     DataMgr.SetStr("time", "morning");
     DataMgr.SetBool("is_game", true);
   }

@@ -42,11 +42,14 @@ public class SearchModel : MonoBehaviour
     Debug.Log($"use card. key={key}");
     switch(key) {
       case "forest":
-        DataMgr.Increment("wood");
-        CommonUtil.changeText("main_text", "木材を一つ見つけたぞ！");
+        DataMgr.Increment("mp", -2);
+        // TODO HPを5減らす
+        searchForest();
         NextButton.instance.hideCardAndShowButton();
         break;
       case "sea":
+        DataMgr.Increment("mp", -3);
+        // TODO HPを3減らす
         DataMgr.Increment("fish");
         CommonUtil.changeText("main_text", "生魚を一つ見つけたぞ！");
         NextButton.instance.hideCardAndShowButton();
@@ -54,6 +57,26 @@ public class SearchModel : MonoBehaviour
       default:
         break;
     }
+    HeaderBar.updateMPBarCurrent();
     SearchMenu.instance.hide();
+  }
+
+  private static void searchForest(){
+    int rnd = CommonUtil.rnd(3);
+    switch(rnd) {
+      case 0:
+      case 1:
+        DataMgr.Increment("wood");
+        CommonUtil.changeText("main_text", "木材を一つ見つけたぞ！");
+        break;
+      case 2:
+        DataMgr.Increment("kinoko");
+        CommonUtil.changeText("main_text", "謎のキノコを見つけた。\n食べられるのだろうか？");
+        break;
+      default:
+        break;
+    }
+
+
   }
 }

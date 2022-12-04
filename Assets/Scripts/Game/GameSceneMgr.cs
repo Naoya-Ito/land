@@ -22,10 +22,14 @@ public class GameSceneMgr : MonoBehaviour
   // 初期状態（探索）の一覧を出す
   void Start() {
     SearchModel.instance.updateSearcList();
+    updateHeader();
     updateDayText();
-
     // TODO イベントがなければ
     updateText();
+  }
+
+  private void updateHeader(){
+    HeaderBar.updateMPBarCurrent();
   }
 
   private void updateDayText(){
