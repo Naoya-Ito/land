@@ -21,7 +21,7 @@ public class CookModel : MonoBehaviour
     }
   }
 
-  public void pushedCraftButton(){
+  public void pushedCookButton(){
     updateCookList();
   }
 
@@ -45,7 +45,7 @@ public class CookModel : MonoBehaviour
       default:
         break;
     }
-    CraftMenu.instance.hide();
+    SubMenu.instance.hide();
   }
 
   public string getItemCostText(CardModel card_model){

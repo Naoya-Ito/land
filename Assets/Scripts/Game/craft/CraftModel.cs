@@ -40,7 +40,7 @@ public class CraftModel : MonoBehaviour
 
   public void updateCraftMenu(CardModel card_model){
     card_model.item_cost = getItemCostText(card_model);
-    CraftMenu.instance.updateInfo(card_model);
+    SubMenu.instance.updateInfo(card_model);
   }
 
   public static void useCard(string key) {
@@ -57,7 +57,7 @@ public class CraftModel : MonoBehaviour
       default:
         break;
     }
-    CraftMenu.instance.hide();
+    SubMenu.instance.hide();
   }
 
   public string getItemCostText(CardModel card_model){

@@ -35,7 +35,7 @@ public class SearchModel : MonoBehaviour
   }
 
   public void updateSubMenu(CardModel card_model){
-    SearchMenu.instance.updateInfo(card_model);
+    SubMenu.instance.updateInfo(card_model);
   }
 
   public static void useCard(string key) {
@@ -58,7 +58,7 @@ public class SearchModel : MonoBehaviour
         break;
     }
     HeaderBar.updateMPBarCurrent();
-    SearchMenu.instance.hide();
+    SubMenu.instance.hide();
   }
 
   private static void searchForest(){
