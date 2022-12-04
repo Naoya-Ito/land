@@ -12,6 +12,7 @@ public class CraftModel : MonoBehaviour
   };
 
   public static CraftModel instance = null;
+  public int card_num = 0;
 
   private void Awake(){
     if(instance == null) {
@@ -27,11 +28,13 @@ public class CraftModel : MonoBehaviour
 
   public void updateCraftList(){
     CardArea.instance.resetAllCard();
+    card_num = 0;
     foreach(string key in CraftModel.all_list) {
       if(key == "fire" && DataMgr.GetBool("fire")) continue;
 
       CardController card = Instantiate(cardPrefab, cardArea);
       card.Init(key, "craft");
+      card_num += 1;
     }
   }
 

@@ -18,6 +18,7 @@ public class ButtonArea : MonoBehaviour {
   }
 
   void Start() {
+    
     if(DataMgr.GetBool("fire")) {
       Instantiate(cookButton, buttonArea);
     }
