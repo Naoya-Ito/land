@@ -5,11 +5,24 @@ using UnityEngine;
 public class GameSceneMgr : MonoBehaviour
 {
 
+  // 1面クリアに必要なもの
+    // TODO イカダのクラフト
+    // TODO イカダ→使う  
+
+  // TODO アイテムボタンに(3)など数を表示
+  // TODO 各アイテムに所持数を追加
+
+  // TODO アイテムを使えるかどうかのフラグ
+    // 木は使えない
+
+  // TODO ゲームオーバー画面を作る
+
   // 画像
   // TODO 羊皮紙のメッセージエリア
 
   // TODO ステージ選択画面
 
+  // ステージ情報
 
   // TODO ゲーム画面
      // TODO HP、正気度の表示
@@ -22,10 +35,15 @@ public class GameSceneMgr : MonoBehaviour
   // 初期状態（探索）の一覧を出す
   void Start() {
     SearchModel.instance.updateSearcList();
+    updateButton();
     updateHeader();
     updateDayText();
     // TODO イベントがなければ
     updateText();
+  }
+
+  private void updateButton(){
+
   }
 
   private void updateHeader(){

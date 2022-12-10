@@ -7,6 +7,7 @@ public class ButtonArea : MonoBehaviour {
 
   public RectTransform buttonArea;
   public Button cookButton;
+  public Button itemButton;
 
   public static ButtonArea instance = null;
   private void Awake(){
@@ -18,7 +19,7 @@ public class ButtonArea : MonoBehaviour {
   }
 
   void Start() {
-    
+
     if(DataMgr.GetBool("fire")) {
       Instantiate(cookButton, buttonArea);
     }
