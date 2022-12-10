@@ -8,8 +8,11 @@ public class CookModel : MonoBehaviour
   public RectTransform cardArea;
 
   public static List<string> all_list = new List<string>() {
-    "",
+    "cook_kinoko",
+    "cook_fish",
   };
+
+  public List<string> list = new List<string>() {};
 
   public static CookModel instance = null;
 
@@ -25,17 +28,28 @@ public class CookModel : MonoBehaviour
     updateCookList();
   }
 
+  public void setCookList(){
+    if(!DataMgr.GetBool("fire")) return;
+
+    foreach(string key in CookModel.all_list) {
+      if(key == "cook_kinoko" && DataMgr.GetInt("kinoko") == 0) continue;
+      if(key == "cook_fish" && DataMgr.GetInt("fish") == 0) continue;
+
+      list.Add(key);
+    }
+  }
+
   public void updateCookList(){
     CardArea.instance.resetAllCard();
-    foreach(string key in CookModel.all_list) {
-//      CardController card = Instantiate(cardPrefab, cardArea);
-//      card.Init(key, "cook");
+    foreach(string key in list) {
+      CardController card = Instantiate(cardPrefab, cardArea);
+      card.Init(key, "cook");
     }
   }
 
   public void updateCookMenu(CardModel card_model){
     card_model.item_cost = getItemCostText(card_model);
-    CookMenu.instance.updateInfo(card_model);
+    SubMenu.instance.updateInfo(card_model);
   }
 
   public static void useCard(string key) {

@@ -6,14 +6,14 @@ public class ItemModel : MonoBehaviour
 {
   [SerializeField] CardController cardPrefab;
   public RectTransform cardArea;
+  public static ItemModel instance = null;
 
   public static List<string> all_list = new List<string>() {
     "wood",
     "kinoko",
   };
 
-  public static ItemModel instance = null;
-  public int card_num = 0;
+  public List<string> list = new List<string>() {};
 
   private void Awake(){
     if(instance == null) {
@@ -23,19 +23,23 @@ public class ItemModel : MonoBehaviour
     }
   }
 
-  public void pushedCraftButton(){
+  public void pushedItemButton(){
     updateItemList();
+  }
+
+  public void setItemList(){
+    foreach(string key in ItemModel.all_list) {
+      if(DataMgr.GetBool(key)) continue;
+
+      list.Add(key);
+    }
   }
 
   public void updateItemList(){
     CardArea.instance.resetAllCard();
-    card_num = 0;
-    foreach(string key in ItemModel.all_list) {
-      if(DataMgr.GetBool(key)) continue;
-
+    foreach(string key in list) {
       CardController card = Instantiate(cardPrefab, cardArea);
       card.Init(key, "item");
-      card_num += 1;
     }
   }
 
@@ -51,7 +55,7 @@ public class ItemModel : MonoBehaviour
         // 使用不可
         break;
       case "kinoko":
-        DataMgr.Increment("wood", -2);
+        DataMgr.Increment("kinoko", -1);
         break;
       default:
         break;

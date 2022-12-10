@@ -9,8 +9,11 @@ public class SearchModel : MonoBehaviour
 
   public static List<string> all_list = new List<string>() {
     "forest",
-    "sea"
+    "sea",
+    "cave"
   };
+
+  public List<string> list = new List<string>() {};
 
   public static SearchModel instance = null;
 
@@ -26,9 +29,17 @@ public class SearchModel : MonoBehaviour
     updateSearcList();
   }
 
+  public void setSearcList(){
+    foreach(string key in SearchModel.all_list) {
+      if(key == "cave" && DataMgr.GetInt("torch") == 0) continue; 
+
+      list.Add(key);
+    }
+  }
+
   public void updateSearcList(){
     CardArea.instance.resetAllCard();
-    foreach(string key in SearchModel.all_list) {
+    foreach(string key in list) {
       CardController card = Instantiate(cardPrefab, cardArea);
       card.Init(key, "search");
     }
@@ -39,7 +50,6 @@ public class SearchModel : MonoBehaviour
   }
 
   public static void useCard(string key) {
-    Debug.Log($"use card. key={key}");
     switch(key) {
       case "forest":
         DataMgr.Increment("mp", -2);
@@ -55,6 +65,7 @@ public class SearchModel : MonoBehaviour
         NextButton.instance.hideCardAndShowButton();
         break;
       default:
+        Debug.Log($"unknown search key. key={key}");
         break;
     }
     HeaderBar.updateMPBarCurrent();

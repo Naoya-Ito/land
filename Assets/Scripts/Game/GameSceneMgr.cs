@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameSceneMgr : MonoBehaviour
 {
+  // sub_menu: 
+    // カードごとにOKボタンの文言(空なら非表示)
 
   // 1面クリアに必要なもの
     // TODO イカダのクラフト
@@ -22,6 +24,10 @@ public class GameSceneMgr : MonoBehaviour
 
   // TODO ステージ選択画面
 
+  // TODO イベント
+    // 孤独
+    // 夜空
+
   // ステージ情報
 
   // TODO ゲーム画面
@@ -32,18 +38,26 @@ public class GameSceneMgr : MonoBehaviour
 
   // TODO カッパの探索アニメーション
 
+
+  // TODO 画像
+  //  探索
+    // 洞窟
+  //  料理
+      // 焼き魚、焼きキノコ
+  // アイテム
+    // 生魚
+
+
+  // TODO 仲間
+    // TODO 遊ぶ。　童心に帰って遊ぶ。体力と正気度の２コイチ
+
+
   // 初期状態（探索）の一覧を出す
   void Start() {
-    SearchModel.instance.updateSearcList();
-    updateButton();
     updateHeader();
     updateDayText();
     // TODO イベントがなければ
     updateText();
-  }
-
-  private void updateButton(){
-
   }
 
   private void updateHeader(){

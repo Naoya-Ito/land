@@ -9,10 +9,11 @@ public class CraftModel : MonoBehaviour
 
   public static List<string> all_list = new List<string>() {
     "fire",
+    "torch"
   };
+  public List<string> list = new List<string>() {};
 
   public static CraftModel instance = null;
-  public int card_num = 0;
 
   private void Awake(){
     if(instance == null) {
@@ -26,15 +27,21 @@ public class CraftModel : MonoBehaviour
     updateCraftList();
   }
 
-  public void updateCraftList(){
-    CardArea.instance.resetAllCard();
-    card_num = 0;
+  public void setCraftList(){
     foreach(string key in CraftModel.all_list) {
       if(key == "fire" && DataMgr.GetBool("fire")) continue;
+      if(key == "torch") {
+        if(!DataMgr.GetBool("fire")) continue;
+      }
 
+      list.Add(key);
+    }
+  }
+
+  public void updateCraftList(){
+    foreach(string key in list) {
       CardController card = Instantiate(cardPrefab, cardArea);
       card.Init(key, "craft");
-      card_num += 1;
     }
   }
 
@@ -44,7 +51,6 @@ public class CraftModel : MonoBehaviour
   }
 
   public static void useCard(string key) {
-    Debug.Log($"use card. key={key}");
     switch(key) {
       case "fire":
         DataMgr.Increment("wood", -2);
@@ -54,7 +60,17 @@ public class CraftModel : MonoBehaviour
         CraftModel.instance.updateCraftList();
         NextButton.instance.hideCardAndShowButton();
         break;
+      case "torch":
+        DataMgr.Increment("wood", -2);
+        DataMgr.Increment("torch", 1);
+        DataMgr.SetBool("fire", true);
+        ButtonArea.instance.addButton("cook");
+        CommonUtil.changeText("main_text", "焚き火を作る事に成功した！\n火……それは文明の証だ！");
+        CraftModel.instance.updateCraftList();
+        NextButton.instance.hideCardAndShowButton();
+        break;
       default:
+        Debug.Log($"unknown craft key. key={key}");
         break;
     }
     SubMenu.instance.hide();
