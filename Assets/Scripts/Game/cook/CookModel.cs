@@ -29,7 +29,7 @@ public class CookModel : MonoBehaviour
   }
 
   public void setCookList(){
-    if(!DataMgr.GetBool("fire")) return;
+    if(!DataMgr.GetInt("item_fire") == 0) return;
 
     foreach(string key in CookModel.all_list) {
       if(key == "cook_kinoko" && DataMgr.GetInt("kinoko") == 0) continue;

@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52fb1d61a1843480daa5515c8e6af13e, type: 3}
   m_Name: wood
   m_EditorClassIdentifier: 
-  name: 
-  image: 
-  card_type: 0
+  name: "\u6728\u6750"
+  image: item/wood
+  card_type: 4
   item_cost: 
-  get_item: 
-  description: 
+  description: "\u3055\u307E\u3056\u307E\u306A\u30AF\u30E9\u30D5\u30C8\u7528\u306E\u6750\u6599\u3068\u306A\u308B\u3002"

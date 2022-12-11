@@ -11,6 +11,11 @@ public class ItemModel : MonoBehaviour
   public static List<string> all_list = new List<string>() {
     "wood",
     "kinoko",
+    "fish",
+    "item_torch",
+
+    // 制作物
+    "item_fire",
   };
 
   public List<string> list = new List<string>() {};
@@ -27,9 +32,21 @@ public class ItemModel : MonoBehaviour
     updateItemList();
   }
 
+  public static List<string> num_item_list = new List<string>() {
+    "wood",
+    "kinoko",
+    "fish",
+    "item_torch",
+  }
+
+
   public void setItemList(){
     foreach(string key in ItemModel.all_list) {
-      if(DataMgr.GetBool(key)) continue;
+      foreach(string num_key in num_item_list) {
+        if(key == num_key && DataMgr.GetInt(key) == 0) continue;
+      }
+
+      if(key == "item_fire" && !DataMgr.GetBool("fire")) continue;
 
       list.Add(key);
     }

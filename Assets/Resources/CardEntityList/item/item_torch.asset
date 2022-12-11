@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52fb1d61a1843480daa5515c8e6af13e, type: 3}
-  m_Name: kinoko
+  m_Name: item_torch
   m_EditorClassIdentifier: 
-  name: "\u30AD\u30CE\u30B3"
-  image: item/kinoko
+  name: "\u305F\u3044\u307E\u3064"
+  image: craft/torch
   card_type: 4
   item_cost: 
-  description: "\u6B63\u4F53\u4E0D\u660E\u306E\u30AD\u30CE\u30B3\u3002\n\u30AD\u30CE\u30B3\u306E\u4E2D\u306B\u306F\u6BD2\u3084\u5E7B\u899A\u4F5C\u7528\u3092\u6301\u3064\u3082\u306E\u3082\u3042\u308B\u306E\u3067\u8981\u6CE8\u610F\u3002\n\u713C\u3044\u3066\u98DF\u3079\u308B\u3068\u304A\u3044\u3057\u3044\u3002"
+  description: "\u8FBA\u308A\u3092\u7167\u3089\u3059\u4E8B\u304C\u3067\u304D\u308B\u3002\n\u3053\u308C\u304C\u3042\u308C\u3070\u6697\u3044\u6D1E\u7A9F\u306E\u63A2\u691C\u3082\u3067\u304D\u305D\u3046\u3060\u3002"

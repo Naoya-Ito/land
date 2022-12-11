@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52fb1d61a1843480daa5515c8e6af13e, type: 3}
   m_Name: cook_kinoko
   m_EditorClassIdentifier: 
-  name: 
-  image: 
+  name: "\u713C\u304D\u30AD\u30CE\u30B3"
+  image: cook/kinoko
   card_type: 0
   item_cost: 
   description: 

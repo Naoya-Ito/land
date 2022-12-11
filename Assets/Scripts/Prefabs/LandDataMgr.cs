@@ -13,13 +13,36 @@ public class LandDataMgr : MonoBehaviour
     }
   }
 
+
+  // 個数を０にするリスト
+  public static List<string> num_reset_list = new List<string>() {
+    "wood",
+    "kinoko",
+    "fish",
+    "item_torch",
+    "item_fire",
+  };
+  public static List<string> bool_reset_list = new List<string>() {
+    "",
+  };
+
+  // TODO HPなど仲間情報も初期化
   public static void initData(){
     DataMgr.SetInt("day", 1);
     DataMgr.SetInt("mp", 100);
     DataMgr.SetInt("max_mp", 100);
 
     DataMgr.SetStr("time", "morning");
+
     DataMgr.SetBool("is_game", true);
+
+    foreach(string key in num_reset_list) {
+      DataMgr.SetInt(key, 0);
+    }
+    foreach(string key in bool_reset_list) {
+      DataMgr.SetBool(key, false);
+    }
+
   }
 
   public static void timePast(){

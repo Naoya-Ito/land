@@ -5,7 +5,13 @@ using UnityEngine;
 public class GameSceneMgr : MonoBehaviour
 {
   // sub_menu: 
-    // カードごとにOKボタンの文言(空なら非表示)
+    // TODO カードごとにOKボタンの文言(空なら非表示)
+
+  // TODO イベント結果の文章を表示するモデル
+
+  // TODO ゴールドの表示
+
+  // TODO HPの減少
 
   // 1面クリアに必要なもの
     // TODO イカダのクラフト
