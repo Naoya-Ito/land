@@ -8,6 +8,7 @@ public class SubMenu : MonoBehaviour {
   public RectTransform sub_menu;
   public TextMeshProUGUI name;
   public TextMeshProUGUI description;
+  public Image okButton;
 
   public static SubMenu instance = null;
 
@@ -22,13 +23,11 @@ public class SubMenu : MonoBehaviour {
   }
 
   public void show(){
-    Vector3 pos = sub_menu.position;
     Vector3 new_pos = new Vector3(0, 0, 0);
     sub_menu.position = new_pos;
   }
 
   public void hide(){
-    Vector3 pos = sub_menu.position;
     Vector3 new_pos = new Vector3(2000, 0, 0);
     sub_menu.position = new_pos;
   }
@@ -38,6 +37,13 @@ public class SubMenu : MonoBehaviour {
     description.text = model.description;
     selected_card = model.cardID;
     card_type = model.card_type;
+    if(model.button_text == "" || model.button_text == null) {
+      CommonUtil.changeText("sub_menu_button_text", "");
+      CommonUtil.unvisibleImage("SubMenuOKButton");
+    } else {
+      CommonUtil.changeText("sub_menu_button_text", model.button_text);
+      CommonUtil.showImage("SubMenuOKButton");
+    }
   }
 
   public void okButtonDidPushed(){

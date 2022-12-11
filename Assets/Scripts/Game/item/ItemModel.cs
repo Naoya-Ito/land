@@ -37,8 +37,7 @@ public class ItemModel : MonoBehaviour
     "kinoko",
     "fish",
     "item_torch",
-  }
-
+  };
 
   public void setItemList(){
     foreach(string key in ItemModel.all_list) {

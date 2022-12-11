@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 78978091}
   - component: {fileID: 78978090}
   m_Layer: 5
-  m_Name: OKButton
+  m_Name: SubMenuOKButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -631,7 +631,7 @@ GameObject:
   - component: {fileID: 299178730}
   - component: {fileID: 299178729}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: sub_menu_button_text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2136,6 +2136,7 @@ MonoBehaviour:
   sub_menu: {fileID: 904017267}
   name: {fileID: 1499771941}
   description: {fileID: 756339031}
+  okButton: {fileID: 0}
 --- !u!114 &904017269
 MonoBehaviour:
   m_ObjectHideFlags: 0

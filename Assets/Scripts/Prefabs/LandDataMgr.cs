@@ -42,7 +42,6 @@ public class LandDataMgr : MonoBehaviour
     foreach(string key in bool_reset_list) {
       DataMgr.SetBool(key, false);
     }
-
   }
 
   public static void timePast(){

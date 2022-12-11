@@ -16,4 +16,5 @@ MonoBehaviour:
   image: cook/kinoko
   card_type: 0
   item_cost: 
-  description: 
+  description: "\u304D\u3063\u3068\u6BD2\u306A\u3093\u3066\u5165\u3063\u3066\u306A\u3044\u713C\u304D\u30AD\u30CE\u30B3\u3002\n\u3068\u3063\u3066\u3082\u7F8E\u5473\u3057\u3044\u3002"
+  button_text: "\u98DF\u3079\u308B"

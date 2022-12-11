@@ -11,6 +11,7 @@ public class CardModel : MonoBehaviour{
   public string item_cost;
   public string get_item;
   public string description;
+  public string button_text;
 
   public CardModel(string cardID, string category){
     CardEntity cardEntity = Resources.Load<CardEntity>($"CardEntityList/{category}/{cardID}");
@@ -25,6 +26,7 @@ public class CardModel : MonoBehaviour{
     this.card_type = cardEntity.card_type;
     this.item_cost = cardEntity.item_cost;
     this.description = cardEntity.description;
+    this.button_text = cardEntity.button_text;
     updateCard();
   }
 

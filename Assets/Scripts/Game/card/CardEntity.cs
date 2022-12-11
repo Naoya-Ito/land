@@ -18,4 +18,5 @@ public class CardEntity : ScriptableObject {
   [SerializeField] public card_type_enum card_type = card_type_enum.search;
   [Multiline] public string item_cost;
   [Multiline] public string description;
+  public string button_text;
 }
