@@ -56,4 +56,8 @@ public class ButtonArea : MonoBehaviour {
         break;
     }
   }
+
+  public void hideArea(){
+    buttonArea.gameObject.SetActive(false);
+  }
 }

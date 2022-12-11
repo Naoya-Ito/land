@@ -55,21 +55,17 @@ public class SearchModel : MonoBehaviour
         DataMgr.Increment("mp", -2);
         // TODO HPを5減らす
         searchForest();
-        NextButton.instance.hideCardAndShowButton();
         break;
       case "sea":
         DataMgr.Increment("mp", -3);
         // TODO HPを3減らす
         DataMgr.Increment("fish");
         CommonUtil.changeText("main_text", "生魚を一つ見つけたぞ！");
-        NextButton.instance.hideCardAndShowButton();
         break;
       default:
         Debug.Log($"unknown search key. key={key}");
         break;
     }
-    HeaderBar.updateMPBarCurrent();
-    SubMenu.instance.hide();
   }
 
   private static void searchForest(){

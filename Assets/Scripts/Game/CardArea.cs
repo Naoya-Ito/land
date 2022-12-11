@@ -21,4 +21,8 @@ public class CardArea : MonoBehaviour
       Destroy(card.gameObject);
     }
   }
+
+  public void hideArea(){
+    cardArea.gameObject.SetActive(false);
+  }
 }

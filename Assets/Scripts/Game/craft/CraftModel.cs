@@ -61,19 +61,16 @@ public class CraftModel : MonoBehaviour
         DataMgr.Increment("wood", -2);
         DataMgr.Increment("item_fire", 1);
         CommonUtil.changeText("main_text", "焚き火を作る事に成功した！\n火……それは文明の証だ！");
-        NextButton.instance.hideCardAndShowButton();
         break;
       case "torch":
         DataMgr.Increment("wood", -1);
         DataMgr.Increment("item_torch", 1);
         CommonUtil.changeText("main_text", "焚き火を作る事に成功した！\n火……それは文明の証だ！");
-        NextButton.instance.hideCardAndShowButton();
         break;
       default:
         Debug.Log($"unknown craft key. key={key}");
         break;
     }
-    SubMenu.instance.hide();
   }
 
   public string getItemCostText(CardModel card_model){

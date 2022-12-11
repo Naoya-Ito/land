@@ -1025,6 +1025,7 @@ MonoBehaviour:
   cardArea: {fileID: 1445084631}
   buttonArea: {fileID: 723915752}
   button: {fileID: 434031560}
+  isButtonPushed: 0
 --- !u!114 &434031560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1069,9 +1070,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 434031559}
-        m_TargetAssemblyTypeName: NextButton, Assembly-CSharp
-        m_MethodName: PressButton
+      - m_Target: {fileID: 904017268}
+        m_TargetAssemblyTypeName: SubMenu, Assembly-CSharp
+        m_MethodName: pressNextButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2137,6 +2138,7 @@ MonoBehaviour:
   name: {fileID: 1499771941}
   description: {fileID: 756339031}
   okButton: {fileID: 0}
+  nextButton: {fileID: 0}
 --- !u!114 &904017269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2640,8 +2642,8 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 130, y: 200}
-  m_Spacing: {x: 0, y: 0}
+  m_CellSize: {x: 110, y: 170}
+  m_Spacing: {x: 10, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!114 &1135556286

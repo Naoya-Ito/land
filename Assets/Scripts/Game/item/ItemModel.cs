@@ -76,7 +76,6 @@ public class ItemModel : MonoBehaviour
       default:
         break;
     }
-    SubMenu.instance.hide();
   }
 
   public string getItemCostText(CardModel card_model){

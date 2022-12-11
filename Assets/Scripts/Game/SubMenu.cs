@@ -9,6 +9,7 @@ public class SubMenu : MonoBehaviour {
   public TextMeshProUGUI name;
   public TextMeshProUGUI description;
   public Image okButton;
+  public Button nextButton;
 
   public static SubMenu instance = null;
 
@@ -54,8 +55,43 @@ public class SubMenu : MonoBehaviour {
       case CardEntity.card_type_enum.craft:
         CraftModel.useCard(selected_card);
         break;
+      case CardEntity.card_type_enum.cook:
+        CookModel.useCard(selected_card);
+        break;
+      case CardEntity.card_type_enum.item:
+        ItemModel.useCard(selected_card);
+        break;
       default:
         Debug.Log($"Error! card_type={card_type}");
+        break;
+    }
+    HeaderBar.updateMPBarCurrent();
+    SubMenu.instance.hide();
+    SubMenu.instance.hideCardAndShowButton();
+  }
+
+  public void hideCardAndShowButton(){
+    CardArea.instance.hideArea();
+    ButtonArea.instance.hideArea();
+
+    Vector3 pos = nextButton.transform.position;
+    Vector3 new_pos = new Vector3(0, pos.y, pos.z);
+    nextButton.transform.position = new_pos;
+  }
+
+  private bool isButtonPushed = false;
+  public void pressNextButton(){
+    if(isButtonPushed) {
+      return;
+    }
+    isButtonPushed = true;
+
+    switch(selected_card) {
+      case "":
+        break;
+      default:
+        LandDataMgr.timePast();
+        CommonUtil.changeScene("GameScene");
         break;
     }
   }
