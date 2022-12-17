@@ -18,3 +18,5 @@ MonoBehaviour:
   item_cost: "\u6B63\u6C17\u5EA6 -3\n\u4F53\u529B -3"
   description: "\u9B5A\u304C\u53D6\u308C\u308C\u3070\u826F\u3044\u304C\u2026\u2026\u7D20\u624B\u3067\u306F\u96E3\u3057\u3044\u306A\u3002"
   button_text: "\u63A2\u691C\u3059\u308B"
+  events:
+  - search/sea/fish

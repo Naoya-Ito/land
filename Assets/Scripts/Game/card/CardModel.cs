@@ -12,6 +12,7 @@ public class CardModel : MonoBehaviour{
   public string get_item;
   public string description;
   public string button_text;
+  public string event_key;
 
   public CardModel(string cardID, string category){
     CardEntity cardEntity = Resources.Load<CardEntity>($"CardEntityList/{category}/{cardID}");
@@ -27,6 +28,11 @@ public class CardModel : MonoBehaviour{
     this.item_cost = cardEntity.item_cost;
     this.description = cardEntity.description;
     this.button_text = cardEntity.button_text;
+    if(cardEntity.events == null || cardEntity.events.Length == 0) {
+      this.event_key = "";
+    } else {
+      this.event_key = CommonUtil.getRndStrByArray(cardEntity.events);
+    }
     updateCard();
   }
 

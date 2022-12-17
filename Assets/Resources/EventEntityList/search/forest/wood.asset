@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b61f74b9bdc415092a0832435627fe, type: 3}
+  m_Name: wood
+  m_EditorClassIdentifier: 
+  text: "\u5927\u91CF\u306E\u6728\u6750\u304C\u53D6\u308C\u305F\uFF01"
+  bg: 
+  change_data:
+  - change_key: wood
+    change_val: 2
+    flag_true: 
+    flag_false: 
+  choices:
+  - choice_text: "\u3084\u3063\u305F\u305E\uFF01"
+    key_name: end
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: 
+    change_val: 0
+    set_flag: 
+    isTimePast: 0

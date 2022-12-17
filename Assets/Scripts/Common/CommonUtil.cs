@@ -11,6 +11,10 @@ public class CommonUtil : MonoBehaviour{
     return Random.Range(0, max_num);
   }
 
+  public static bool isHitPer(int per){
+    return CommonUtil.rnd(100) < per;
+  }
+
   public static void changeScene(string scene_name, float delay = 0.4f){
     if(FadeManager.instance) {
       if(DataMgr.GetBool("change_scene_time_speed_up")) {
@@ -102,6 +106,13 @@ public class CommonUtil : MonoBehaviour{
 
     Image image = GameObject.Find(key).GetComponent<Image>();
     image.enabled = false;
+  }
+
+  public static void hideButton(string key) {
+    Button button = GameObject.Find(key).GetComponent<Button>();
+    Vector3 pos = button.transform.position;
+    Vector3 new_pos = new Vector3(3000, pos.y, pos.z);
+    button.transform.position = new_pos;
   }
 
   public static void setRectWidth(string key, int width){

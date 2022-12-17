@@ -41,11 +41,11 @@ public class ItemModel : MonoBehaviour
 
   public void setItemList(){
     foreach(string key in ItemModel.all_list) {
-      foreach(string num_key in num_item_list) {
-        if(key == num_key && DataMgr.GetInt(key) == 0) continue;
+      if(num_item_list.Contains(key)) {
+        if(DataMgr.GetInt(key) == 0) continue;
+      } else {
+        if(key == "item_fire" && !DataMgr.GetBool("fire")) continue;
       }
-
-      if(key == "item_fire" && !DataMgr.GetBool("fire")) continue;
 
       list.Add(key);
     }
@@ -54,6 +54,7 @@ public class ItemModel : MonoBehaviour
   public void updateItemList(){
     CardArea.instance.resetAllCard();
     foreach(string key in list) {
+      Debug.Log($"update item_list. key = {key}");
       CardController card = Instantiate(cardPrefab, cardArea);
       card.Init(key, "item");
     }
@@ -89,7 +90,18 @@ public class ItemModel : MonoBehaviour
     return "";
   }
 
-  // TODO OKボタン押せるかどうかの判定
 
-
+  // OKボタン押した後にイベント起きる可能性
+  public string get_ok_event(string key) {
+    switch(key) {
+      case "kinoko":
+        if(CommonUtil.isHitPer(70)) {
+          return "kinoko_poison";
+        }
+        break;
+      default:
+        return "";
+    }
+    return "";
+  }
 }

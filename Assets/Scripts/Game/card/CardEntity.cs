@@ -19,4 +19,5 @@ public class CardEntity : ScriptableObject {
   [Multiline] public string item_cost;
   [Multiline] public string description;
   public string button_text;
+  public string[] events;
 }
