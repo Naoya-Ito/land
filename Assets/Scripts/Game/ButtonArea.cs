@@ -19,6 +19,8 @@ public class ButtonArea : MonoBehaviour {
     }
   }
 
+  // TODO 一度ボタンが消えたら再表示されないバグあり
+  // TODO アイテムの数を表示するべし
   void Start() {
     SearchModel.instance.setSearcList();
     int search_num = SearchModel.instance.list.Count;

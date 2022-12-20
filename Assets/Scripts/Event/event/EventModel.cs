@@ -18,7 +18,7 @@ public class EventModel : MonoBehaviour{
     }
 
     this.eventID = eventID;
-    this.text = eventEntity.text;
+    this.text = eventEntity.getText();
     this.bg = eventEntity.bg;
     this.change_data = eventEntity.change_data;
     this.choices = eventEntity.choices;
@@ -36,6 +36,7 @@ public class EventModel : MonoBehaviour{
     }     
   }
 
+  // TODO mp の場合、最大値を超えない、バーを変更するなどが必要
   public void changeData(){
     foreach(ChangeData data in change_data) {
       if(data.change_key != "") {
