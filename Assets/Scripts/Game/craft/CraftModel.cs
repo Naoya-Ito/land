@@ -84,7 +84,6 @@ public class CraftModel : MonoBehaviour
     return "";
   }
 
-  // TODO OKボタン押せるかどうかの判定
 
 
 }

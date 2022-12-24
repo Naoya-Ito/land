@@ -83,7 +83,7 @@ public class CommonUtil : MonoBehaviour{
   }
 
   public static void showImage(string key){
-    Debug.Log($"show image. key={key}");
+//    Debug.Log($"show image. key={key}");
     Image image = GameObject.Find(key).GetComponent<Image>();
 		var color = image.color;
 		color.a = 1.0f;
@@ -110,9 +110,17 @@ public class CommonUtil : MonoBehaviour{
 
   public static void hideButton(string key) {
     Button button = GameObject.Find(key).GetComponent<Button>();
-    Vector3 pos = button.transform.position;
+    Vector3 pos = button.transform.localPosition;
+//    Debug.Log($"key={key}. x={pos.x} y={pos.y}");
     Vector3 new_pos = new Vector3(3000, pos.y, pos.z);
-    button.transform.position = new_pos;
+    button.transform.localPosition = new_pos;
+  }
+
+  public static void showButton(string key, float pos_x) {
+    Button button = GameObject.Find(key).GetComponent<Button>();
+    Vector3 pos = button.transform.localPosition;
+    Vector3 new_pos = new Vector3(pos_x, pos.y, pos.z);
+    button.transform.localPosition = new_pos;
   }
 
   public static void setRectWidth(string key, int width){

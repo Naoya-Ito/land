@@ -37,9 +37,11 @@ public class SubMenu : MonoBehaviour {
     description.text = model.description;
     if(model.button_text == "" || model.button_text == null) {
       CommonUtil.hideButton("SubMenuOKButton");
+//      CommonUtil.hideButton("CancelButton");
     } else {
       CommonUtil.changeText("sub_menu_button_text", model.button_text);
-      CommonUtil.showImage("SubMenuOKButton");
+      //CommonUtil.showImage("SubMenuOKButton");
+      CommonUtil.showButton("SubMenuOKButton", 220.0f);
     }
   }
 

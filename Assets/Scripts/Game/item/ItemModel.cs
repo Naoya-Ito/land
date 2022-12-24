@@ -54,7 +54,7 @@ public class ItemModel : MonoBehaviour
   public void updateItemList(){
     CardArea.instance.resetAllCard();
     foreach(string key in list) {
-      Debug.Log($"update item_list. key = {key}");
+//      Debug.Log($"update item_list. key = {key}");
       CardController card = Instantiate(cardPrefab, cardArea);
       card.Init(key, "item");
     }
