@@ -7,6 +7,8 @@ using TMPro;
 public class CardView : MonoBehaviour{
   [SerializeField] TextMeshProUGUI nameText;
   [SerializeField] Image image;
+  [SerializeField] Image num_image;
+  [SerializeField] TextMeshProUGUI num_text;
 
   public void updateView(CardModel cardModel){
     nameText.text = cardModel.name;
@@ -16,7 +18,24 @@ public class CardView : MonoBehaviour{
       nameText.fontSize = 30;
     }
 
+    changeNumIcon(cardModel);
     changeImage(cardModel.image);
+  }
+
+  private void changeNumIcon(CardModel cardModel){
+    if(cardModel.card_type != CardEntity.card_type_enum.item) {
+      num_image.enabled = false;
+      num_text.text = "";
+      num_text.fontSize = 30;
+    } else {
+      int num = DataMgr.GetInt(cardModel.cardID);
+      num_text.text = $"{num}";
+      if(num > 9) {
+        num_text.fontSize = 20;
+      } else {
+        num_text.fontSize = 30;
+      }
+    }
   }
 
   private void changeImage(string image_path){

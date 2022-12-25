@@ -37,14 +37,13 @@ public class ItemModel : MonoBehaviour
     "kinoko",
     "fish",
     "item_torch",
+    "item_fire",
   };
 
   public void setItemList(){
     foreach(string key in ItemModel.all_list) {
       if(num_item_list.Contains(key)) {
         if(DataMgr.GetInt(key) == 0) continue;
-      } else {
-        if(key == "item_fire" && !DataMgr.GetBool("fire")) continue;
       }
 
       list.Add(key);

@@ -30,11 +30,11 @@ public class CraftModel : MonoBehaviour
   public void setCraftList(){
     foreach(string key in CraftModel.all_list) {
       if(key == "fire") {
-        if(DataMgr.GetBool("fire")) continue;
+        if(DataMgr.GetInt("item_fire") > 0) continue;
         if(DataMgr.GetInt("wood") < 2) continue;
       }
       if(key == "torch") {
-        if(!DataMgr.GetBool("fire")) continue;
+        if(DataMgr.GetInt("item_fire") == 0) continue;
         if(DataMgr.GetInt("wood") < 1) continue;
       }
 

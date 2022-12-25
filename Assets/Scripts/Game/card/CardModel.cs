@@ -13,6 +13,7 @@ public class CardModel : MonoBehaviour{
   public string description;
   public string button_text;
   public string event_key;
+  public int num;
 
   public CardModel(string cardID, string category){
     CardEntity cardEntity = Resources.Load<CardEntity>($"CardEntityList/{category}/{cardID}");
