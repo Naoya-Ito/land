@@ -13,7 +13,7 @@ public class EventSceneMgr : MonoBehaviour
 
     setEventModel();
 
-    updateText();
+    updateScene();
   }
 
   private void updateHeader(){
@@ -51,7 +51,7 @@ public class EventSceneMgr : MonoBehaviour
     model = new EventModel(key);
   }
 
-  private void updateText(){
+  private void updateScene(){
     string text = model.text;
     CommonUtil.changeText("main_text", text);
 
@@ -66,6 +66,8 @@ public class EventSceneMgr : MonoBehaviour
     } else if (i == 2) {
       CommonUtil.hideButton("ChoiceButton3");
     }
+
+    CommonUtil.changeImage("bg", model.bg);
   }
 
   private bool is_pushed = false;

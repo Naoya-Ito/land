@@ -12,7 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01b61f74b9bdc415092a0832435627fe, type: 3}
   m_Name: good_night
   m_EditorClassIdentifier: 
-  texts: []
-  bg: 
-  change_data: []
-  choices: []
+  texts:
+  - text: "\u3068\u3066\u3082\u9759\u304B\u306A\u591C\u3060\u3063\u305F\u3002\n\n\u79C1\u306F\u3053\u661F\u7A7A\u3092\u773A\u3081\u306A\u304C\u3089\u8272\u3005\u306A\u4E8B\u3092\u8003\u3048\u305F\u3002\n\n\u3053\u308C\u307E\u3067\u306E\u4EBA\u751F\u3002\n\u3053\u306E\u5192\u967A\u306E\u884C\u304F\u672B\u3002\n\u751F\u307E\u308C\u3066\u304D\u305F\u610F\u5473\u3002\n\n\u3053\u306E\u7F8E\u3057\u3044\u60C5\u666F\u3092\u89B3\u308C\u305F\u3060\u3051\u3067\n\u3053\u306E\u5192\u967A\u306B\u306F\u4FA1\u5024\u304C\u3042\u3063\u305F\u3068\u601D\u3048\u305F\u3002\u3002"
+  bg: event/night/good_night
+  change_data:
+  - change_key: mp
+    change_val: 10
+    flag_true: 
+    flag_false: 
+  choices:
+  - choice_text: "\u660E\u65E5\u3082\u9811\u5F35\u308D\u3046"
+    key_name: end
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: 
+    change_val: 0
+    set_flag: 
+    isTimePast: 0
