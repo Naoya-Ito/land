@@ -6,9 +6,11 @@ using UnityEngine.UI;
 public class ButtonArea : MonoBehaviour {
 
   public RectTransform buttonArea;
+  public Button searchButton;
   public Button craftButton;
   public Button cookButton;
   public Button itemButton;
+  public Button restButton;
 
   public static ButtonArea instance = null;
   private void Awake(){
@@ -19,12 +21,27 @@ public class ButtonArea : MonoBehaviour {
     }
   }
 
-  // TODO アイテムの数を表示するべし
   void Start() {
+    string time = DataMgr.GetStr("time");
+    string time_text;
+    switch(time) {
+      case "night":
+        updateNightButton();
+        break;
+      default:
+        updateNormalButton();
+        break;
+    }
+  }
+
+  private void updateNormalButton(){
     SearchModel.instance.setSearcList();
     int search_num = SearchModel.instance.list.Count;
-    CommonUtil.changeText("search_button_text", $"探索({search_num})");
-    SearchModel.instance.updateSearcList();
+    if(search_num > 0) {
+      CommonUtil.changeText("search_button_text", $"探索({search_num})");
+      Instantiate(searchButton, buttonArea);
+      SearchModel.instance.updateSearcList();
+    }
 
     CraftModel.instance.setCraftList();
     int craft_num = CraftModel.instance.list.Count;
@@ -45,6 +62,16 @@ public class ButtonArea : MonoBehaviour {
     if(item_num > 0) {
       CommonUtil.changeText("item_button_text", $"アイテム({item_num})");
       Instantiate(itemButton, buttonArea);
+    }
+  }
+
+  private void updateNightButton(){
+    RestModel.instance.setRestList();
+    int rest_num = RestModel.instance.list.Count;
+    if(rest_num > 0) {
+      CommonUtil.changeText("rest_button_text", $"休む({rest_num})");
+      Instantiate(restButton, buttonArea);
+      RestModel.instance.updateRestList();
     }
   }
 

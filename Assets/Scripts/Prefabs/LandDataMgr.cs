@@ -55,9 +55,9 @@ public class LandDataMgr : MonoBehaviour
         DataMgr.SetStr("time", "sunset");
         break;
       case "sunset":
-        DataMgr.SetStr("time", "knight");
+        DataMgr.SetStr("time", "night");
         break;
-      case "knight":
+      case "night":
         DataMgr.SetStr("time", "morning");
         DataMgr.Increment("day");
         break;

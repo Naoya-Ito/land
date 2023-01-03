@@ -13,7 +13,8 @@ public class CardEntity : ScriptableObject {
     cook,
     move,
     item,
-    party
+    party,
+    rest
   }
   [SerializeField] public card_type_enum card_type = card_type_enum.search;
   [Multiline] public string item_cost;

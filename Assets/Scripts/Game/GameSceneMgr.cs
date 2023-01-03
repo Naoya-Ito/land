@@ -84,7 +84,7 @@ public class GameSceneMgr : MonoBehaviour
       case "sunset":
         time_text = "夕";
         break;
-      case "knight":
+      case "night":
         time_text = "夜";
         break;
       default:
