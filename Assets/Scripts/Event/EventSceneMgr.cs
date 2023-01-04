@@ -14,6 +14,8 @@ public class EventSceneMgr : MonoBehaviour
     setEventModel();
 
     updateScene();
+
+    changeData();
   }
 
   private void updateHeader(){
@@ -90,5 +92,11 @@ public class EventSceneMgr : MonoBehaviour
       // データ変動あれば行う
       CommonUtil.changeScene("EventScene");
     }
+  }
+
+  private void changeData(){
+    LandDataMgr.changeData(model.change_data);
+
+    // TODO 右下にポップアップで変更データを出す
   }
 }

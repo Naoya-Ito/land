@@ -8,11 +8,8 @@ using System.Collections.Generic;
 /// <summary>
 /// シーン遷移時のフェードイン・アウトを制御するためのクラス .
 /// </summary>
-public class FadeManager : MonoBehaviour
-{
-
+public class FadeManager : MonoBehaviour {
 	#region Singleton
-
 	public static FadeManager instance;
 
 	public static FadeManager Instance {
@@ -95,9 +92,6 @@ public class FadeManager : MonoBehaviour
 				}
 			}
 		}
-
-
-
 	}
 
 	/// <summary>
@@ -115,9 +109,8 @@ public class FadeManager : MonoBehaviour
 	/// </summary>
 	/// <param name='scene'>シーン名</param>
 	/// <param name='interval'>暗転にかかる時間(秒)</param>
-	private IEnumerator TransScene (string scene, float interval)
-	{
-		//だんだん暗く .
+  //だんだん暗く .
+	private IEnumerator TransScene (string scene, float interval) {
 		this.isFading = true;
 		float time = 0;
 		while (time <= interval) {

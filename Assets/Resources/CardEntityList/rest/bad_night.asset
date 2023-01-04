@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52fb1d61a1843480daa5515c8e6af13e, type: 3}
   m_Name: bad_night
   m_EditorClassIdentifier: 
-  name: 
+  name: "\u5BDD\u308B"
   image: 
-  card_type: 0
+  card_type: 6
   item_cost: 
-  description: 
+  description: "\u306A\u3093\u3060\u304B\u80F8\u9A12\u304E\u304C\u3059\u308B\u3002\n\u675E\u6182\u3067\u3042\u308C\u3070\u826F\u3044\u306E\u3060\u304C\u2026\u2026\u3002"
   button_text: 
-  events: []
+  change_data: []
+  events:
+  - rest/bad_night

@@ -18,5 +18,17 @@ MonoBehaviour:
   item_cost: "\u6B63\u6C17\u5EA6 -2\n\u4F53\u529B -5"
   description: "\u8272\u3005\u306A\u7D20\u6750\u304C\u898B\u3064\u304B\u308A\u305D\u3046\u3060\u3002"
   button_text: "\u63A2\u691C\u3059\u308B"
+  change_data:
+  - change_key: mp
+    change_val: -2
+    flag_true: 
+    flag_false: 
+  - change_key: hp
+    change_val: -5
+    flag_true: 
+    flag_false: 
   events:
   - search/forest/wood
+  - search/forest/wood
+  - search/forest/wood
+  - search/forest/kinoko

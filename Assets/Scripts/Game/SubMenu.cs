@@ -45,6 +45,8 @@ public class SubMenu : MonoBehaviour {
     }
   }
 
+
+  // TODO 画面遷移のディレイや暗転を入れる
   private bool isButtonPushed = false;
   public void okButtonDidPushed(){
     if(isButtonPushed) {
@@ -52,9 +54,19 @@ public class SubMenu : MonoBehaviour {
     }
     isButtonPushed = true;
 
+
+    changeData();
+    goEventScene();
+  }
+
+  private void changeData(){
+    LandDataMgr.changeData(card_model.change_data);
+
+    // TODO 画面右下にポップアップを表示
+  }
+
+  private void goEventScene(){
     DataMgr.SetStr("event", card_model.event_key);
-    EventModel event_model = new EventModel(card_model.event_key);
-    event_model.changeData();
     CommonUtil.changeScene("EventScene");
   }
 

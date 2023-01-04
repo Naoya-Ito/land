@@ -4,6 +4,8 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "CardEntity", menuName = "Create CardEntity")]
 
+// TODO 正気度100なら怠けるカッパ画像
+
 public class CardEntity : ScriptableObject {
   public new string name;
   public string image;
@@ -20,5 +22,6 @@ public class CardEntity : ScriptableObject {
   [Multiline] public string item_cost;
   [Multiline] public string description;
   public string button_text;
+  public ChangeData[] change_data;
   public string[] events;
 }

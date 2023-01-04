@@ -12,7 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01b61f74b9bdc415092a0832435627fe, type: 3}
   m_Name: bad_night
   m_EditorClassIdentifier: 
-  texts: []
+  texts:
+  - text: "\u672A\u6765\u306E\u4E8B\u3092\u8003\u3048\u308B\u3068\u4E0D\u5B89\u3067\u7720\u308C\u306A\u3044\u3002\n\u3042\u3042\u3001\u3044\u3063\u305D\u660E\u65E5\u306A\u3093\u3066\u6765\u306A\u3051\u308C\u3070\u826F\u3044\u306E\u306B\u3002"
   bg: 
-  change_data: []
-  choices: []
+  change_data:
+  - change_key: mp
+    change_val: -10
+    flag_true: 
+    flag_false: 
+  choices:
+  - choice_text: "\u306A\u304B\u306A\u304B\u7720\u308C\u306A\u3044"
+    key_name: end
+    lock_text: 
+    lock_text_sub: 
+    lock_key: 
+    lock_val: 0
+    lock_flag_name: 
+    random_keys: []
+    get_card: 
+    change_key: 
+    change_val: 0
+    set_flag: 
+    isTimePast: 0

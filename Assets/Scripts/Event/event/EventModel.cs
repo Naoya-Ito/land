@@ -35,19 +35,4 @@ public class EventModel : MonoBehaviour{
         break;
     }     
   }
-
-  // TODO mp の場合、最大値を超えない、バーを変更するなどが必要
-  public void changeData(){
-    foreach(ChangeData data in change_data) {
-      if(data.change_key != "") {
-        DataMgr.Increment(data.change_key, data.change_val);
-      }
-      if(data.flag_true != "") {
-        DataMgr.SetBool(data.flag_true, true);
-      }
-      if(data.flag_false != "") {
-        DataMgr.SetBool(data.flag_false, true);
-      }
-    }
-  }
 }

@@ -18,5 +18,6 @@ MonoBehaviour:
   item_cost: "\u306A\u3057"
   description: "\u3086\u3063\u304F\u308A\u4F11\u3080\u3002\n\u6B63\u6C17\u5EA6\u3082\u5145\u5206\u3060\u3057\u826F\u3044\u591C\u3092\u8FCE\u3048\u3089\u308C\u305D\u3046\u3060\u3002"
   button_text: "\u5BDD\u308B"
+  change_data: []
   events:
-  - night/good_night
+  - rest/good_night
