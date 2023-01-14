@@ -69,6 +69,8 @@ public class LandDataMgr : MonoBehaviour
 
   // TODO mp の場合、最大値を超えない、バーを変更するなどが必要
   public static void changeData(ChangeData[] change_data){
+    if(change_data.Length == 0) return;
+
     foreach(ChangeData data in change_data) {
       if(data.change_key != "") {
         DataMgr.Increment(data.change_key, data.change_val);
@@ -81,4 +83,21 @@ public class LandDataMgr : MonoBehaviour
       }
     }
   }
+
+  public static string getDisplayNamByKey(string key){
+    switch(key) {
+      case "hp":
+        return "体力";
+      case "mp":
+        return "正気度";
+      case "wood":
+        return "木材";
+      case "fish":
+        return "生魚";
+      default:
+      break;
+    }
+    return $"名称未設定 {key}";
+  }
+
 }

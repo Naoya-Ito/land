@@ -7,6 +7,9 @@ public class GameSceneMgr : MonoBehaviour
   // sub_menu: 
     // TODO カードごとにOKボタンの文言(空なら非表示)
 
+
+  // メインクエスト、サブクエストを画面右上に表示？
+
   // TODO イベント結果の文章を表示するモデル
 
   // TODO ゴールドの表示

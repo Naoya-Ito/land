@@ -8,8 +8,9 @@ public class SubMenu : MonoBehaviour {
   public RectTransform sub_menu;
   public TextMeshProUGUI name;
   public TextMeshProUGUI description;
-  public Image okButton;
   public Button nextButton;
+
+  private float scene_transition_delay = 3.0f;
 
   public static SubMenu instance = null;
   private CardModel card_model;
@@ -54,15 +55,50 @@ public class SubMenu : MonoBehaviour {
     }
     isButtonPushed = true;
 
-
     changeData();
-    goEventScene();
+
+    Invoke("goEventScene", scene_transition_delay);
+
+    // TODO カードなどは全て非表示(一才の操作不可)
+    hide();
   }
 
   private void changeData(){
     LandDataMgr.changeData(card_model.change_data);
 
-    // TODO 画面右下にポップアップを表示
+    showFooterMessage(card_model.change_data);
+
+    // TODO ライフや正気度などを表示変更
+  }
+
+  // TODO footer message 3 も作る
+  // TODO 共通化する
+  // TODO 画像も設定できるようにする
+  private void showFooterMessage(ChangeData[] change_data){
+    if(change_data.Length == 0) return;
+
+    int i = 1;
+    foreach(ChangeData data in change_data) {
+      Image footer_msg = GameObject.Find($"footer_message{i}").GetComponent<Image>();
+      Vector3 pos = footer_msg.transform.localPosition;
+      footer_msg.transform.localPosition = new Vector3(300, pos.y, pos.z);
+
+      string title = LandDataMgr.getDisplayNamByKey(data.change_key);
+      int body = data.change_val;
+
+      if(data.change_key != "") {
+        CommonUtil.changeText($"footer_text{i}", $"{title}\n{body}");
+      }
+      /*
+      if(data.flag_true != "") {
+        DataMgr.SetBool(data.flag_true, true);
+      }
+      if(data.flag_false != "") {
+        DataMgr.SetBool(data.flag_false, true);
+      }
+      */
+      i++;
+    }
   }
 
   private void goEventScene(){
