@@ -32,6 +32,10 @@ public class LandDataMgr : MonoBehaviour
     DataMgr.SetInt("mp", 100);
     DataMgr.SetInt("max_mp", 100);
 
+    // TODO 各キャラクターのhp
+    DataMgr.SetInt("hp1", 100);
+    DataMgr.SetInt("max_hp1", 100);
+
     DataMgr.SetStr("time", "morning");
     DataMgr.SetStr("event", "");
 
@@ -73,7 +77,11 @@ public class LandDataMgr : MonoBehaviour
 
     foreach(ChangeData data in change_data) {
       if(data.change_key != "") {
-        DataMgr.Increment(data.change_key, data.change_val);
+        if(data.change_key == "hp") {
+          changeHP(data.change_val);
+        } else {
+          DataMgr.Increment(data.change_key, data.change_val);
+        }
       }
       if(data.flag_true != "") {
         DataMgr.SetBool(data.flag_true, true);
@@ -82,6 +90,11 @@ public class LandDataMgr : MonoBehaviour
         DataMgr.SetBool(data.flag_false, true);
       }
     }
+  }
+
+  // TODO誰のHPを減らすか
+  private static void changeHP(int val){
+    DataMgr.Increment("hp1", val);
   }
 
   public static string getDisplayNamByKey(string key){

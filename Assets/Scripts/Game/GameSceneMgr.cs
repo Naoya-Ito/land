@@ -7,6 +7,17 @@ public class GameSceneMgr : MonoBehaviour
   // sub_menu: 
     // TODO カードごとにOKボタンの文言(空なら非表示)
 
+  // 持ち物が多いと混乱する
+
+
+  // HPが減っていると低い可能性で傷が化膿するイベント発生
+
+  // 寝るとHPが僅かに自然回復する
+
+  // 家なしで寝ると病期になるかも
+    // bad event 5種類
+
+
 
   // メインクエスト、サブクエストを画面右上に表示？
 
@@ -64,13 +75,37 @@ public class GameSceneMgr : MonoBehaviour
   // 初期状態（探索）の一覧を出す
   void Start() {
     updateHeader();
+    updateLifeBar(); 
     updateDayText();
     // TODO イベントがなければ
     updateText();
+
+    // TODO 状態によってカッパアイコンを変更
   }
 
   private void updateHeader(){
     HeaderBar.updateMPBarCurrent();
+  }
+
+  // TODO 人数分のHPを更新
+  private void updateLifeBar(){
+    updateHpBarCurrent(1);
+  }
+
+  // TODO なんらかの形で汎用化。４人分のライフを管理できるようにする
+  public void updateHpBarCurrent(int i){
+    int now_hp = DataMgr.GetInt($"hp{i}");
+    int max_hp = DataMgr.GetInt($"max_hp{i}");
+    updateHpBar(now_hp, max_hp, i);
+  }
+
+    // TODO 減少分の値をバーで表示
+  public static void updateHpBar(int val, int max_val, int i){
+    double per = (double)val/(double)max_val;
+    int length = (int)(100*per);
+    CommonUtil.setRectWidth($"life_bar{i}", length);
+    //CommonUtil.changeText("mp_text", $"{val}/{max_val}");
+    CommonUtil.changeText($"life_text{i}", $"{val}");
   }
 
   private void updateDayText(){

@@ -99,4 +99,7 @@ public class EventSceneMgr : MonoBehaviour
 
     // TODO 右下にポップアップで変更データを出す
   }
+
+  // TODO イベント時、背景がなければ保存されてる背景をセット
+  // TODO サブメニューでOK時、画面のボタン要素を全て非表示
 }

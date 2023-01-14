@@ -61,6 +61,7 @@ public class SubMenu : MonoBehaviour {
 
     // TODO カードなどは全て非表示(一才の操作不可)
     hide();
+    hideCardAndShowButton();
   }
 
   private void changeData(){
