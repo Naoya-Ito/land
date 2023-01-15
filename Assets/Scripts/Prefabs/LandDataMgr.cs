@@ -37,6 +37,7 @@ public class LandDataMgr : MonoBehaviour
     DataMgr.SetInt("max_hp1", 100);
 
     DataMgr.SetStr("time", "morning");
+    DataMgr.SetStr("bg", "field_sea");
     DataMgr.SetStr("event", "");
 
     DataMgr.SetBool("is_game", true);

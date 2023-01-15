@@ -18,7 +18,6 @@ public class ChoiceModel
   public string change_key = "";
   public int change_val;
   public string set_flag = "";
-  public bool isTimePast;
 
   public bool isChoiceLock(){
     if(lock_key == "") return false;

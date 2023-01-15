@@ -17,4 +17,6 @@ MonoBehaviour:
   card_type: 4
   item_cost: 
   description: "\u98DF\u3079\u308C\u3070\u50C5\u304B\u306B\u6B63\u6C17\u5EA6\u3092\u56DE\u5FA9\u3067\u304D\u308B\u304C\u3001\n\u304A\u8179\u3092\u58CA\u3059\u53EF\u80FD\u6027\u304C\u9AD8\u3044\u3002"
-  button_text: "\u98DF\u3079\u308B"
+  button_text: 
+  change_data: []
+  events: []

@@ -6,7 +6,6 @@ public class EventSceneMgr : MonoBehaviour
 {
   EventModel model;
 
-
   void Start() {
     updateHeader();
     updateDayText();
@@ -15,7 +14,7 @@ public class EventSceneMgr : MonoBehaviour
 
     updateScene();
 
-    changeData();
+    LandDataMgr.changeData(model.change_data);
   }
 
   private void updateHeader(){
@@ -57,6 +56,8 @@ public class EventSceneMgr : MonoBehaviour
     string text = model.text;
     CommonUtil.changeText("main_text", text);
 
+    changeBG();
+
     int i = 0;
     foreach(ChoiceModel choice in model.choices) {
       CommonUtil.changeText($"choice_text{i+1}", choice.choice_text);
@@ -68,36 +69,37 @@ public class EventSceneMgr : MonoBehaviour
     } else if (i == 2) {
       CommonUtil.hideButton("ChoiceButton3");
     }
+  }
 
-    CommonUtil.changeImage("bg", model.bg);
+  private void changeBG(){
+    if(model.bg == "") {
+      string bg = DataMgr.GetStr("bg");
+      Debug.Log($"change bg. a= {bg}");
+      CommonUtil.changeImage("bg", bg);
+    } else {
+      CommonUtil.changeImage("bg", model.bg);
+    }
   }
 
   private bool is_pushed = false;
   public void pushedChoiceButton(int i) {
-//    Debug.Log($"pushed {i}");
+    //Debug.Log($"pushed {i}");
     if(is_pushed) {
       return;
     }
     is_pushed = true;
 
     string next_key = model.choices[i-1].key_name;
-    CommonUtil.changeScene("GameScene");
     if(next_key == "end") {
       DataMgr.SetStr("event", "");
       LandDataMgr.timePast();
       CommonUtil.changeScene("GameScene");
+    } else if (next_key == "day_end") {
+      // TODO 日付変更画面へと遷移
     } else {
       DataMgr.SetStr("event", next_key);
-
-      // データ変動あれば行う
       CommonUtil.changeScene("EventScene");
     }
-  }
-
-  private void changeData(){
-    LandDataMgr.changeData(model.change_data);
-
-    // TODO 右下にポップアップで変更データを出す
   }
 
   // TODO イベント時、背景がなければ保存されてる背景をセット

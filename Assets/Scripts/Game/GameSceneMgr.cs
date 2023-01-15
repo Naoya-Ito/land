@@ -134,31 +134,11 @@ public class GameSceneMgr : MonoBehaviour
     CommonUtil.changeText("day_text", day_text);
   }
 
+  // TODO 正気度や条件によって呼ぶモデルを変える`
   private void updateText(){
     string time = DataMgr.GetStr("time");
-    string text;
-    switch(time) {
-      case "morning":
-        text = getMorningText();
-        break;
-      case "evening":
-        text = "昼";
-        break;
-      case "sunset":
-        text = "夕";
-        break;
-      case "knight":
-        text = "夜";
-        break;
-      default:
-        text = "その他";
-        break;
-    }
-
-    CommonUtil.changeText("main_text", text);
-  }
-
-  private string getMorningText(){
-    return "朝日が眩しい。今日も大冒険が始まる。";
+    string key = $"{time}/good";
+    TextModel text_model = new TextModel(key);
+    CommonUtil.changeText("main_text", text_model.text);
   }
 }
